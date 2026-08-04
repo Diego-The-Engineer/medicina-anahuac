@@ -26,16 +26,16 @@ const items = [
     href: '#recursos',
   },
   {
-    title: '¿Cómo funciona la facultad?',
+    title: 'Directorio academico',
     description: 'Estructura, autoridades y procesos.',
     icon: Building2,
-    href: '#secciones',
+    href: '#directorio',
   },
   {
-    title: 'Servicios Universitarios',
+    title: 'Comunidad Universitaria',
     description: 'Todo lo que el campus ofrece.',
     icon: Sparkles,
-    href: '#secciones',
+    href: '#comunidad',
   },
   {
     title: 'Becas',
