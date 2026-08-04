@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manual del Estudiante de Medicina 2026-2027 | Universidad Anáhuac Oaxaca</title>
-  <meta name="description" content="El manual interactivo para estudiantes de Medicina de la Universidad Anáhuac Oaxaca. Toda tu vida universitaria en un solo lugar." />
+  <meta name="description"
+    content="El manual interactivo para estudiantes de Medicina de la Universidad Anáhuac Oaxaca. Toda tu vida universitaria en un solo lugar." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,10 +17,12 @@
   <!-- Google Fonts: Poppins + Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet" />
 
   <!-- Favicon -->
-   <link rel="icon" type="image/svg" href="favicon.svg" sizes="96x96">
+  <link rel="icon" type="image/svg" href="favicon.svg" sizes="96x96">
 
   <script>
     tailwind.config = {
@@ -39,9 +43,21 @@
   </script>
 
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', system-ui, sans-serif; color: #1F2937; }
-    h1, h2, h3, .font-heading { font-family: 'Poppins', system-ui, sans-serif; }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #1F2937;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-heading {
+      font-family: 'Poppins', system-ui, sans-serif;
+    }
 
     /* Scroll fade-in animation */
     .fade-in {
@@ -50,20 +66,39 @@
       transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
       will-change: opacity, transform;
     }
+
     .fade-in.is-visible {
       opacity: 1;
       transform: none;
     }
+
     @media (prefers-reduced-motion: reduce) {
-      .fade-in { opacity: 1; transform: none; transition: none; }
-      html { scroll-behavior: auto; }
+      .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      html {
+        scroll-behavior: auto;
+      }
     }
 
     @keyframes bounce-soft {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-4px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-4px);
+      }
     }
-    .animate-bounce-soft:hover { animation: bounce-soft 0.9s ease-in-out infinite; }
+
+    .animate-bounce-soft:hover {
+      animation: bounce-soft 0.9s ease-in-out infinite;
+    }
   </style>
 </head>
 
@@ -83,12 +118,15 @@
       </a>
 
       <nav class="hidden items-center gap-7 md:flex" aria-label="Navegación principal">
-        <a href="#secciones" class="text-sm font-medium text-gray-600 transition-colors hover:text-anahuac">Secciones</a>
-        <a href="#sociedad" class="text-sm font-medium text-gray-600 transition-colors hover:text-anahuac">Sociedad de Alumnos</a>
+        <a href="#secciones"
+          class="text-sm font-medium text-gray-600 transition-colors hover:text-anahuac">Secciones</a>
+        <a href="#sociedad" class="text-sm font-medium text-gray-600 transition-colors hover:text-anahuac">Sociedad de
+          Alumnos</a>
         <a href="#contacto" class="text-sm font-medium text-gray-600 transition-colors hover:text-anahuac">Contacto</a>
       </nav>
 
-      <a href="https://oaxaca.anahuac.mx/licenciaturas/medico-cirujano" class="rounded-full bg-anahuac px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:scale-105 hover:bg-anahuac-dark hover:shadow-md">
+      <a href="https://oaxaca.anahuac.mx/licenciaturas/medico-cirujano"
+        class="rounded-full bg-anahuac px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:scale-105 hover:bg-anahuac-dark hover:shadow-md">
         Detalles de la carrera
       </a>
     </div>
@@ -96,12 +134,14 @@
 
   <!-- ===================== HERO ===================== -->
   <section id="inicio" class="relative flex min-h-[85vh] items-center overflow-hidden">
-    <img src="hero-campus.jpg" alt="Campus de la Universidad Anáhuac Oaxaca" class="absolute inset-0 h-full w-full object-cover" sizes="500x500"/>
+    <img src="hero-campus.jpg" alt="Campus de la Universidad Anáhuac Oaxaca"
+      class="absolute inset-0 h-full w-full object-cover" sizes="500x500" />
     <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/25"></div>
 
     <div class="relative mx-auto w-full max-w-6xl px-4 py-24">
       <div class="max-w-2xl fade-in">
-        <span class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-white backdrop-blur">
+        <span
+          class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-white backdrop-blur">
           <i class="fa-solid fa-stethoscope"></i>
           Facultad de Medicina · Generación 2026-2027
         </span>
@@ -112,11 +152,13 @@
           El manual interactivo para estudiantes de Medicina.
         </p>
         <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#secciones" class="animate-bounce-soft inline-flex items-center gap-2 rounded-full bg-anahuac px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:scale-105 hover:bg-anahuac-dark">
+          <a href="#secciones"
+            class="animate-bounce-soft inline-flex items-center gap-2 rounded-full bg-anahuac px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:scale-105 hover:bg-anahuac-dark">
             Explorar Secciones
             <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <a href="#sociedad" class="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-3.5 text-base font-semibold text-white transition-all hover:bg-white/10">
+          <a href="#sociedad"
+            class="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-3.5 text-base font-semibold text-white transition-all hover:bg-white/10">
             Sociedad de Alumnos
           </a>
         </div>
@@ -142,548 +184,750 @@
       </div>
     </div>
   </section>
-  
+
   <!-- ===================== FEATURED: SOCIEDAD DE ALUMNOS ===================== -->
-<section id="sociedad" class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 bg-[#F9FAFB]">
+  <section id="sociedad" class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 bg-[#F9FAFB]">
 
     <div class="max-w-4xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-[#1F2937] tracking-tight sm:text-5xl">
-            Sociedad de Alumnos
-        </h2>
-        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-            Bienvenido(a) a la Sociedad de Alumnos de Medicina 2026–2027. Somos un equipo de estudiantes que, al igual que tú, vive los retos, aprendizajes y experiencias de la carrera. Nuestro compromiso es representar la voz de nuestra comunidad, impulsar iniciativas que enriquezcan la vida universitaria y crear espacios de crecimiento académico, social y humano. 
-        </p>
-        <p class="mt-4 text-lg text-gray-600 leading-relaxed">
-            Con ese mismo compromiso, desarrollamos este Manual del Estudiante pensando en ti, para que tengas en un solo lugar la información, los recursos y las herramientas que te ayudarán a aprovechar al máximo tu vida universitaria.
-        </p>
+      <h2 class="text-4xl font-extrabold text-[#1F2937] tracking-tight sm:text-5xl">
+        Sociedad de Alumnos
+      </h2>
+      <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+        Bienvenido(a) a la Sociedad de Alumnos de Medicina 2026–2027. Somos un equipo de estudiantes que, al igual que
+        tú, vive los retos, aprendizajes y experiencias de la carrera. Nuestro compromiso es representar la voz de
+        nuestra comunidad, impulsar iniciativas que enriquezcan la vida universitaria y crear espacios de crecimiento
+        académico, social y humano.
+      </p>
+      <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+        Con ese mismo compromiso, desarrollamos este Manual del Estudiante pensando en ti, para que tengas en un solo
+        lugar la información, los recursos y las herramientas que te ayudarán a aprovechar al máximo tu vida
+        universitaria.
+      </p>
     </div>
 
     <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5900]/10 text-[#FF5900] mb-4">
-                <i class="fa-solid fa-people-group text-2xl"></i>
-            </span>
-            <span class="text-gray-700 font-medium text-lg">Representación estudiantil</span>
-        </div>
-        <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5900]/10 text-[#FF5900] mb-4">
-                <i class="fa-solid fa-calendar-check text-2xl"></i>
-            </span>
-            <span class="text-gray-700 font-medium text-lg">Eventos académicos</span>
-        </div>
-        <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5900]/10 text-[#FF5900] mb-4">
-                <i class="fa-solid fa-hand-holding-heart text-2xl"></i>
-            </span>
-            <span class="text-gray-700 font-medium text-lg">Apoyo para nuevos estudiantes</span>
-        </div>
+      <div
+        class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5900]/10 text-[#FF5900] mb-4">
+          <i class="fa-solid fa-people-group text-2xl"></i>
+        </span>
+        <span class="text-gray-700 font-medium text-lg">Representación estudiantil</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5900]/10 text-[#FF5900] mb-4">
+          <i class="fa-solid fa-calendar-check text-2xl"></i>
+        </span>
+        <span class="text-gray-700 font-medium text-lg">Eventos académicos</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5900]/10 text-[#FF5900] mb-4">
+          <i class="fa-solid fa-hand-holding-heart text-2xl"></i>
+        </span>
+        <span class="text-gray-700 font-medium text-lg">Apoyo para nuevos estudiantes</span>
+      </div>
     </div>
 
-    <div class="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] bg-gray-200 rounded-3xl shadow-2xl overflow-hidden mb-20 group">
-        <img src="sociedad-alumnos.jpeg" alt="Mesa Directiva Sociedad de Alumnos" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+    <div
+      class="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] bg-gray-200 rounded-3xl shadow-2xl overflow-hidden mb-20 group">
+      <img src="sociedad-alumnos.jpeg" alt="Mesa Directiva Sociedad de Alumnos"
+        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
     </div>
 
-    <h3 class="text-2xl font-bold text-[#1F2937] mb-6 border-b-2 border-[#FF5900] inline-block pb-1">Nuestra Mesa Directiva</h3>
-    
+    <h3 class="text-2xl font-bold text-[#1F2937] mb-6 border-b-2 border-[#FF5900] inline-block pb-1">Nuestra Mesa
+      Directiva</h3>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-        <!-- Tarjeta Miembro 1 -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Fabricio Fajardo</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Presidente</p>
-        </div>
-        <!-- Tarjeta Miembro 2 -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Fátima Guendulain</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Vicepresidenta</p>
-        </div>
-        <!-- Tarjeta Miembro 3 -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Raúl Cervantes</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Tesorero</p>
-        </div>
-        <!-- Tarjeta Miembro 4 -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Isabella Alves</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Secretaria General</p>
-        </div>
+      <!-- Tarjeta Miembro 1 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Fabricio Fajardo</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Presidente</p>
+      </div>
+      <!-- Tarjeta Miembro 2 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Fátima Guendulain</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Vicepresidenta</p>
+      </div>
+      <!-- Tarjeta Miembro 3 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Raúl Cervantes</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Tesorero</p>
+      </div>
+      <!-- Tarjeta Miembro 4 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Isabella Alves</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Secretaria General</p>
+      </div>
 
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Xana Díaz</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Coordinadora De Eventos</p>
-        </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Xana Díaz</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Coordinadora De Eventos</p>
+      </div>
 
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Santiago Montalvo</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Coorinador De Talleres</p>
-        </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Santiago Montalvo</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Coorinador De Talleres</p>
+      </div>
 
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Yohana Rosario</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Coordinadora De Redes Sociales</p>
-        </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Yohana Rosario</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Coordinadora De Redes Sociales</p>
+      </div>
 
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Metzi Rojas</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Coorinadora De Atención a Alumnos</p>
-        </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Metzi Rojas</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Coorinadora De Atención a Alumnos</p>
+      </div>
 
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
-            <h4 class="text-lg font-bold text-[#1F2937]">Angélica Gopar</h4>
-            <p class="text-[#FF5900] font-medium text-sm mt-1">Coorinadora De Multimedia</p>
-        </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center">
+        <h4 class="text-lg font-bold text-[#1F2937]">Angélica Gopar</h4>
+        <p class="text-[#FF5900] font-medium text-sm mt-1">Coorinadora De Multimedia</p>
+      </div>
 
 
     </div>
 
-    
+
     <!-- Botones de Redes Sociales y Acción -->
     <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/medicinaanahuacoaxaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:opacity-90 transition-opacity shadow-md">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-            Medicina Anáhuac Oaxaca
-        </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/medicinaanahuacoaxaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+        target="_blank"
+        class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:opacity-90 transition-opacity shadow-md">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+            clip-rule="evenodd" />
+        </svg>
+        Medicina Anáhuac Oaxaca
+      </a>
 
-        <a href="https://www.instagram.com/sa_medicina_uao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:opacity-90 transition-opacity shadow-md">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-            Sociedad de Alumnos de Medicina UAO
-        </a>
+      <a href="https://www.instagram.com/sa_medicina_uao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+        target="_blank"
+        class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:opacity-90 transition-opacity shadow-md">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+            clip-rule="evenodd" />
+        </svg>
+        Sociedad de Alumnos de Medicina UAO
+      </a>
 
-        <a href="https://www.instagram.com/anahuacoaxaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:opacity-90 transition-opacity shadow-md">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-            Universidad Anáhuac Oaxaca
-        </a>
-        
-        <!-- Botón Modal WhatsApp -->
-        <button onclick="document.getElementById('whatsapp-modal').classList.remove('hidden')" class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-[#00ff08] text-white font-semibold rounded-full hover:bg-[#0c9610] transition-colors shadow-md">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
-            ¡Únete a nuestro grupo de WhatsApp!
-        </button>
+      <a href="https://www.instagram.com/anahuacoaxaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+        target="_blank"
+        class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:opacity-90 transition-opacity shadow-md">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+            clip-rule="evenodd" />
+        </svg>
+        Universidad Anáhuac Oaxaca
+      </a>
+
+      <!-- Botón Modal WhatsApp -->
+      <button onclick="document.getElementById('whatsapp-modal').classList.remove('hidden')"
+        class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-[#00ff08] text-white font-semibold rounded-full hover:bg-[#0c9610] transition-colors shadow-md">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z">
+          </path>
+        </svg>
+        ¡Únete a nuestro grupo de WhatsApp!
+      </button>
     </div>
-</section>
+  </section>
 
-<!-- MODAL DE WHATSAPP (Oculto por defecto) -->
-<div id="whatsapp-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm px-4">
+  <!-- MODAL DE WHATSAPP (Oculto por defecto) -->
+  <div id="whatsapp-modal"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm px-4">
     <div class="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 text-center transform transition-all">
-        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
-            <svg class="h-8 w-8 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.098l-3.324 1.746.635-3.711-2.696-2.628 3.726-.541 1.667-3.376 1.667 3.376 3.726.541-2.696 2.628.635 3.711zM12 2C6.477 2 2 6.477 2 12c0 1.746.449 3.393 1.25 4.846L2 22l5.323-1.15A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-        </div>
-        <h3 class="text-xl font-bold text-[#1F2937] mb-2">¡Bienvenido a tu generación!</h3>
-        <p class="text-gray-500 mb-6">Estás a un clic de unirte a la comunidad oficial. Resuelve dudas, conoce a tus compañeros y entérate de los eventos.</p>
-        
-        <div class="flex flex-col gap-3">
-            <a href="https://chat.whatsapp.com/IWSmQFb1sOOGNNADFEzYEy?mode=gi_t" target="_blank" class="w-full bg-[#25D366] text-white font-bold py-3 rounded-full hover:bg-[#1ebe57] transition-colors shadow-sm">
-                Unirme al grupo de WhatsApp
-            </a>
-            <button onclick="document.getElementById('whatsapp-modal').classList.add('hidden')" class="w-full bg-gray-100 text-gray-700 font-bold py-3 rounded-full hover:bg-gray-200 transition-colors">
-                Cancelar
-            </button>
-        </div>
+      <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+        <svg class="h-8 w-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12.031 21.098l-3.324 1.746.635-3.711-2.696-2.628 3.726-.541 1.667-3.376 1.667 3.376 3.726.541-2.696 2.628.635 3.711zM12 2C6.477 2 2 6.477 2 12c0 1.746.449 3.393 1.25 4.846L2 22l5.323-1.15A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-bold text-[#1F2937] mb-2">¡Bienvenido a tu generación!</h3>
+      <p class="text-gray-500 mb-6">Estás a un clic de unirte a la comunidad oficial. Resuelve dudas, conoce a tus
+        compañeros y entérate de los eventos.</p>
+
+      <div class="flex flex-col gap-3">
+        <a href="https://chat.whatsapp.com/IWSmQFb1sOOGNNADFEzYEy?mode=gi_t" target="_blank"
+          class="w-full bg-[#25D366] text-white font-bold py-3 rounded-full hover:bg-[#1ebe57] transition-colors shadow-sm">
+          Unirme al grupo de WhatsApp
+        </a>
+        <button onclick="document.getElementById('whatsapp-modal').classList.add('hidden')"
+          class="w-full bg-gray-100 text-gray-700 font-bold py-3 rounded-full hover:bg-gray-200 transition-colors">
+          Cancelar
+        </button>
+      </div>
     </div>
-</div>
+  </div>
 
-        
 
-       
+
+
+  </div>
+  </div>
+  </section>
+  <div id="whatsapp-modal"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm px-4">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 text-center transform transition-all">
+      <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+        <svg class="h-8 w-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12.031 21.098l-3.324 1.746.635-3.711-2.696-2.628 3.726-.541 1.667-3.376 1.667 3.376 3.726.541-2.696 2.628.635 3.711zM12 2C6.477 2 2 6.477 2 12c0 1.746.449 3.393 1.25 4.846L2 22l5.323-1.15A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-bold text-[#1F2937] mb-2">¡Bienvenido a tu generación!</h3>
+      <p class="text-gray-500 mb-6">Estás a un clic de unirte a la comunidad oficial. Resuelve dudas, conoce a tus
+        compañeros y entérate de los eventos.</p>
+
+      <div class="flex flex-col gap-3">
+        <a href="https://chat.whatsapp.com/IWSmQFb1sOOGNNADFEzYEy?mode=gi_t" target="_blank"
+          class="w-full bg-[#25D366] text-white font-bold py-3 rounded-full hover:bg-[#1ebe57] transition-colors shadow-sm">
+          Unirme al grupo de WhatsApp
+        </a>
+        <button onclick="document.getElementById('whatsapp-modal').classList.add('hidden')"
+          class="w-full bg-gray-100 text-gray-700 font-bold py-3 rounded-full hover:bg-gray-200 transition-colors">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+  <section id="recursos" class="bg-gray-50 py-20">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-extrabold text-[#1F2937] tracking-tight sm:text-5xl">
+        Recursos Esenciales
+      </h2>
+      <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+        Aquí encontrarás los documentos y recursos más importantes para tu vida universitaria. Accede fácilmente a la
+        información que consultarás durante tu carrera.
+      </p>
+    </div>
+    <div class="max-w-6xl mx-auto relative z-10">
+
+      <!-- Grid de 3 columnas -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+
+        <!-- TARJETA 1: Calendario -->
+        <div class="flex flex-col items-center">
+          <div class="min-h-[5rem] flex items-end justify-center mb-4">
+            <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
+              Calendario<br>académico 2026
+            </h3>
+          </div>
+
+          <!-- Tarjeta Morada -->
+          <div
+            class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
+            <!-- Imagen -->
+            <img src="Calendario.png" alt="Calendario 2026"
+              class="w-full aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner">
+            <!-- Botón -->
+            <a href="https://www.anahuac.mx/oaxaca/calendario-2026"
+              class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
+              <span class="underline underline-offset-4">Acceder</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- TARJETA 2: Plan de estudios -->
+        <div class="flex flex-col items-center">
+          <div class="min-h-[5rem] flex items-end justify-center mb-4">
+            <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
+              Plan de estudios
+            </h3>
+          </div>
+
+          <div
+            class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
+            <img src="Plan.png" alt="Plan de estudios"
+              class="w-full aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner">
+            <a href="PLAN MEDICINA 2026.pdf"
+              class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
+              <span class="underline underline-offset-4">Acceder</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- TARJETA 3: Mapa -->
+        <div class="flex flex-col items-center">
+          <div class="min-h-[5rem] flex items-end justify-center mb-4">
+            <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
+              Mapa<br>Universitario
+            </h3>
+          </div>
+
+          <div
+            class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
+            <img src="Mapita.png" alt="Mapa Universitario"
+              class="w-full aspect-[4/3] sm:aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner">
+            <a href="MAPA UNIVERSIDAD.png"
+              class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
+              <span class="underline underline-offset-4">Acceder</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-<div id="whatsapp-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm px-4">
-    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 text-center transform transition-all">
-        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
-            <svg class="h-8 w-8 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.098l-3.324 1.746.635-3.711-2.696-2.628 3.726-.541 1.667-3.376 1.667 3.376 3.726.541-2.696 2.628.635 3.711zM12 2C6.477 2 2 6.477 2 12c0 1.746.449 3.393 1.25 4.846L2 22l5.323-1.15A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-        </div>
-        <h3 class="text-xl font-bold text-[#1F2937] mb-2">¡Bienvenido a tu generación!</h3>
-        <p class="text-gray-500 mb-6">Estás a un clic de unirte a la comunidad oficial. Resuelve dudas, conoce a tus compañeros y entérate de los eventos.</p>
-        
-        <div class="flex flex-col gap-3">
-            <a href="https://chat.whatsapp.com/IWSmQFb1sOOGNNADFEzYEy?mode=gi_t" target="_blank" class="w-full bg-[#25D366] text-white font-bold py-3 rounded-full hover:bg-[#1ebe57] transition-colors shadow-sm">
-                Unirme al grupo de WhatsApp
-            </a>
-            <button onclick="document.getElementById('whatsapp-modal').classList.add('hidden')" class="w-full bg-gray-100 text-gray-700 font-bold py-3 rounded-full hover:bg-gray-200 transition-colors">
-                Cancelar
-            </button>
-        </div>
-    </div>
-</div>
-<section id="recursos" class="bg-gray-50 py-20">
-    <div class="max-w-4xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-[#1F2937] tracking-tight sm:text-5xl">
-            Recursos Esenciales
-        </h2>
-        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-            Aquí encontrarás los documentos y recursos más importantes para tu vida universitaria. Accede fácilmente a la información que consultarás durante tu carrera.
-        </p>
-    </div>
-    <div class="max-w-6xl mx-auto relative z-10">
-    
-    <!-- Grid de 3 columnas -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
 
-      <!-- TARJETA 1: Calendario -->
-      <div class="flex flex-col items-center">
-        <div class="min-h-[5rem] flex items-end justify-center mb-4">
-          <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
-            Calendario<br>académico 2026
-          </h3>
-        </div>
-        
-        <!-- Tarjeta Morada -->
-        <div class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
-          <!-- Imagen -->
-          <img 
-            src="Calendario.png" 
-            alt="Calendario 2026" 
-            class="w-full aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner"
-          >
-          <!-- Botón -->
-          <a href="https://www.anahuac.mx/oaxaca/calendario-2026" class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
-            <span class="underline underline-offset-4">Acceder</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- TARJETA 2: Plan de estudios -->
-      <div class="flex flex-col items-center">
-        <div class="min-h-[5rem] flex items-end justify-center mb-4">
-          <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
-            Plan de estudios
-          </h3>
-        </div>
-        
-        <div class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
-          <img 
-            src="Plan.png" 
-            alt="Plan de estudios" 
-            class="w-full aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner"
-          >
-          <a href="PLAN MEDICINA 2026.pdf" class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
-            <span class="underline underline-offset-4">Acceder</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- TARJETA 3: Mapa -->
-      <div class="flex flex-col items-center">
-        <div class="min-h-[5rem] flex items-end justify-center mb-4">
-          <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
-            Mapa<br>Universitario
-          </h3>
-        </div>
-        
-        <div class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
-          <img 
-            src="Mapita.png" 
-            alt="Mapa Universitario" 
-            class="w-full aspect-[4/3] sm:aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner"
-          >
-          <a href="MAPA UNIVERSIDAD.png" class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
-            <span class="underline underline-offset-4">Acceder</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section> 
-
-<section id="directorio"class="flex-1 max-w-5xl mx-auto py-16 px-4 w-full">
-  <div class="mb-10">
+  <section id="directorio" class="flex-1 max-w-5xl mx-auto py-16 px-4 w-full">
+    <div class="mb-10">
       <span class="text-sm font-semibold uppercase tracking-wide text-anahuac">Estructura y Organización</span>
       <h1 class="mt-2 font-heading text-3xl font-bold text-ink sm:text-4xl">Directorio Académico</h1>
-      <p class="mt-3 text-lg text-gray-600">Conoce al equipo directivo y académico que encabeza la Facultad de Medicina de la Universidad Anáhuac Oaxaca.</p>
+      <p class="mt-3 text-lg text-gray-600">Conoce al equipo directivo y académico que encabeza la Facultad de Medicina
+        de la Universidad Anáhuac Oaxaca.</p>
     </div>
-      <h2 class="font-heading text-2xl font-bold text-ink mb-6 border-b-2 border-anahuac inline-block pb-1">Directorio académico</h2>
-      
-      <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm bg-white">
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="bg-gray-50 text-gray-700 font-heading text-sm uppercase tracking-wider border-b border-gray-200">
-              <th class="py-4 px-6 font-semibold">Nombre</th>
-              <th class="py-4 px-6 font-semibold">Función</th>
-              <th class="py-4 px-6 font-semibold">Correo</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100 text-sm">
-            <tr class="hover:bg-gray-50/60 transition-colors">
-              <td class="py-4 px-6 font-medium text-ink">Dr. David Ricardo Mayren García</td>
-              <td class="py-4 px-6 text-gray-600">Director</td>
-              <td class="py-4 px-6"><a href="mailto:david.mayren@anahuac.mx" class="text-anahuac hover:underline font-medium">david.mayren@anahuac.mx</a></td>
-            </tr>
-            <tr class="hover:bg-gray-50/60 transition-colors">
-              <td class="py-4 px-6 font-medium text-ink">Dr. Hector Matus Santiago</td>
-              <td class="py-4 px-6 text-gray-600">Subdirector</td>
-              <td class="py-4 px-6"><a href="mailto:hector.matus@anahuac.mx" class="text-anahuac hover:underline font-medium">hector.matus@anahuac.mx</a></td>
-            </tr>
-            <tr class="hover:bg-gray-50/60 transition-colors">
-              <td class="py-4 px-6 font-medium text-ink">Lic. Tania Amira Hernández Nieto</td>
-              <td class="py-4 px-6 text-gray-600">Asistente Académico</td>
-              <td class="py-4 px-6"><a href="mailto:tania.hernandezn@anahuac.mx" class="text-anahuac hover:underline font-medium">tania.hernandezn@anahuac.mx</a></td>
-            </tr>
-            <tr class="hover:bg-gray-50/60 transition-colors">
-              <td class="py-4 px-6 font-medium text-ink">Dr. Roberto Méndez Pérez</td>
-              <td class="py-4 px-6 text-gray-600">Coordinador de ciclos básicos</td>
-              <td class="py-4 px-6"><a href="mailto:roberto.mendezp5@anahuac.mx" class="text-anahuac hover:underline font-medium">roberto.mendezp5@anahuac.mx</a></td>
-            </tr>
-            <tr class="hover:bg-gray-50/60 transition-colors">
-              <td class="py-4 px-6 font-medium text-ink">Dr. Victor Terrazas</td>
-              <td class="py-4 px-6 text-gray-600">Coordinador de ciclos clínicos</td>
-              <td class="py-4 px-6"><a href="mailto:Victor.terrazas@anahuac.mx" class="text-anahuac hover:underline font-medium">Victor.terrazas@anahuac.mx</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!-- SECCIÓN: COMUNIDAD UNIVERSITARIA -->
-<section id="comunidad" class="bg-anahuac relative py-20 px-4 overflow-hidden">
-  
-  <div class="max-w-6xl mx-auto relative z-10">
-    
-    <!-- 1. Encabezado (Se mantiene igual, se adapta a móvil normal) -->
-    <div class="flex flex-col md:flex-row items-center md:items-end justify-between mb-16 relative">
-      <div class="flex items-center gap-4 md:gap-6">
-        <span class="text-6xl md:text-8xl font-black text-[#A0A6F9] leading-none drop-shadow-md">04</span>
-        <h2 class="text-white text-3xl md:text-5xl font-black leading-tight uppercase tracking-wide">
-          Comunidad<br>Universitaria
-        </h2>
+    <h2 class="font-heading text-2xl font-bold text-ink mb-6 border-b-2 border-anahuac inline-block pb-1">Directorio
+      académico</h2>
+
+    <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm bg-white">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="bg-gray-50 text-gray-700 font-heading text-sm uppercase tracking-wider border-b border-gray-200">
+            <th class="py-4 px-6 font-semibold">Nombre</th>
+            <th class="py-4 px-6 font-semibold">Función</th>
+            <th class="py-4 px-6 font-semibold">Correo</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100 text-sm">
+          <tr class="hover:bg-gray-50/60 transition-colors">
+            <td class="py-4 px-6 font-medium text-ink">Dr. David Ricardo Mayren García</td>
+            <td class="py-4 px-6 text-gray-600">Director</td>
+            <td class="py-4 px-6"><a href="mailto:david.mayren@anahuac.mx"
+                class="text-anahuac hover:underline font-medium">david.mayren@anahuac.mx</a></td>
+          </tr>
+          <tr class="hover:bg-gray-50/60 transition-colors">
+            <td class="py-4 px-6 font-medium text-ink">Dr. Hector Matus Santiago</td>
+            <td class="py-4 px-6 text-gray-600">Subdirector</td>
+            <td class="py-4 px-6"><a href="mailto:hector.matus@anahuac.mx"
+                class="text-anahuac hover:underline font-medium">hector.matus@anahuac.mx</a></td>
+          </tr>
+          <tr class="hover:bg-gray-50/60 transition-colors">
+            <td class="py-4 px-6 font-medium text-ink">Lic. Tania Amira Hernández Nieto</td>
+            <td class="py-4 px-6 text-gray-600">Asistente Académico</td>
+            <td class="py-4 px-6"><a href="mailto:tania.hernandezn@anahuac.mx"
+                class="text-anahuac hover:underline font-medium">tania.hernandezn@anahuac.mx</a></td>
+          </tr>
+          <tr class="hover:bg-gray-50/60 transition-colors">
+            <td class="py-4 px-6 font-medium text-ink">Dr. Roberto Méndez Pérez</td>
+            <td class="py-4 px-6 text-gray-600">Coordinador de ciclos básicos</td>
+            <td class="py-4 px-6"><a href="mailto:roberto.mendezp5@anahuac.mx"
+                class="text-anahuac hover:underline font-medium">roberto.mendezp5@anahuac.mx</a></td>
+          </tr>
+          <tr class="hover:bg-gray-50/60 transition-colors">
+            <td class="py-4 px-6 font-medium text-ink">Dr. Victor Terrazas</td>
+            <td class="py-4 px-6 text-gray-600">Coordinador de ciclos clínicos</td>
+            <td class="py-4 px-6"><a href="mailto:Victor.terrazas@anahuac.mx"
+                class="text-anahuac hover:underline font-medium">Victor.terrazas@anahuac.mx</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- SECCIÓN: COMUNIDAD UNIVERSITARIA -->
+  <section id="comunidad" class="bg-anahuac relative py-20 px-4 overflow-hidden">
+
+    <div class="max-w-6xl mx-auto relative z-10">
+
+      <!-- 1. Encabezado (Se mantiene igual, se adapta a móvil normal) -->
+      <div class="flex flex-col md:flex-row items-center md:items-end justify-between mb-16 relative">
+        <div class="flex items-center gap-4 md:gap-6">
+          <span class="text-6xl md:text-8xl font-black text-[#A0A6F9] leading-none drop-shadow-md">04</span>
+          <h2 class="text-white text-3xl md:text-5xl font-black leading-tight uppercase tracking-wide">
+            Comunidad<br>Universitaria
+          </h2>
+        </div>
+
+        <a href="https://www.anahuac.mx/oaxaca/alumnado"
+          class="mt-8 md:mt-0 border-2 border-white px-10 py-3 text-white font-bold tracking-widest uppercase text-lg hover:bg-white hover:text-anahuac transition-colors">
+          Acceder
+        </a>
+
+        <!-- Etiqueta amarilla flotante -->
+        <div
+          class="absolute -top-10 right-0 md:top-0 md:right-48 bg-[#FFD13B] text-black font-extrabold text-sm md:text-base px-6 py-2 rounded-full rotate-[12deg] shadow-xl border border-black/5 z-20">
+          Básicos de tu<br>día a día
+        </div>
       </div>
 
-      <a href="https://www.anahuac.mx/oaxaca/alumnado" class="mt-8 md:mt-0 border-2 border-white px-10 py-3 text-white font-bold tracking-widest uppercase text-lg hover:bg-white hover:text-anahuac transition-colors">
-        Acceder
+      <!-- ENVOLTURA DESLIZABLE PARA MÓVILES -->
+      <!-- Esto permite que en celular deslices a los lados, ocultando la barra de scroll para que se vea limpio -->
+      <div
+        class="overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0 md:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+        <!-- Forzamos un ancho mínimo de 900px para que las 3 columnas NUNCA se apilen -->
+        <div class="min-w-[900px] md:min-w-full">
+
+          <!-- 2. Contenedor Gris con las Tarjetas (Fijamos a 3 columnas siempre) -->
+          <div class="bg-[#DFE1E5] rounded-3xl p-8 shadow-2xl relative z-10">
+            <div class="grid grid-cols-3 gap-8">
+
+              <!-- Tarjeta 1: SIU -->
+              <div
+                class="bg-white rounded-3xl p-6 flex flex-col h-48 relative shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+                <span class="text-[#772A8F] font-black text-xl absolute top-6 left-6">1</span>
+                <div class="flex-1 flex items-center justify-center">
+                  <span class="text-5xl font-black text-anahuac tracking-wider">SIU</span>
+                </div>
+                <span class="font-extrabold text-center text-sm text-ink leading-tight">Sistema
+                  integral<br>Universitario</span>
+              </div>
+
+              <!-- Tarjeta 2: Brightspace -->
+              <div
+                class="bg-white rounded-3xl p-6 flex flex-col h-48 relative shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+                <span class="text-[#772A8F] font-black text-xl absolute top-6 left-6">2</span>
+                <div class="flex-1 flex flex-col items-center justify-center">
+                  <span class="text-2xl font-bold whitespace-nowrap">
+                    <span class="text-anahuac">D2L</span> <span class="text-gray-400 font-light">Brightspace</span>
+                  </span>
+                </div>
+                <span class="font-extrabold text-center text-sm text-ink leading-tight">Brightspace</span>
+              </div>
+
+              <!-- Tarjeta 3: Biblioteca -->
+              <div
+                class="bg-white rounded-3xl p-6 flex flex-col h-48 relative shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+                <span class="text-[#772A8F] font-black text-xl absolute top-6 left-6">3</span>
+                <div class="flex-1 flex items-center justify-center">
+                  <i class="fa-solid fa-book-open text-5xl text-anahuac"></i>
+                </div>
+                <span class="font-extrabold text-center text-sm text-ink leading-tight">Biblioteca</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. Textos descriptivos y flechas (Fijados a 3 columnas también) -->
+          <div class="grid grid-cols-3 gap-8 mt-2">
+
+            <!-- Descripción 1 -->
+            <div class="flex flex-col items-center px-4">
+              <svg class="h-12 w-12 text-white/80 mb-3" fill="none" stroke="currentColor" stroke-dasharray="4 4"
+                stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-4 4m4-4l4 4" />
+              </svg>
+              <p class="text-white text-center text-base font-medium leading-relaxed text-balance">
+                <span class="font-bold">1.</span> Aquí podrás realizar tu carga de materias, consultar calificaciones,
+                realizar pagos, etc.
+              </p>
+            </div>
+
+            <!-- Descripción 2 -->
+            <div class="flex flex-col items-center px-4">
+              <svg class="h-12 w-12 text-white/80 mb-3" fill="none" stroke="currentColor" stroke-dasharray="4 4"
+                stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-4 4m4-4l4 4" />
+              </svg>
+              <p class="text-white text-center text-base font-medium leading-relaxed text-balance">
+                <span class="font-bold">2.</span> Aquí podrás visualizar tus materias en línea, entregar tareas,
+                realizar evaluaciones, etc.
+              </p>
+            </div>
+
+            <!-- Descripción 3 -->
+            <div class="flex flex-col items-center px-4">
+              <svg class="h-12 w-12 text-white/80 mb-3" fill="none" stroke="currentColor" stroke-dasharray="4 4"
+                stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-4 4m4-4l4 4" />
+              </svg>
+              <p class="text-white text-center text-base font-medium leading-relaxed text-balance">
+                <span class="font-bold">3.</span> Aquí podrás acceder a bases de datos científicas. Es un recurso clave
+                para tus investigaciones y trabajos.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: PROGRAMAS DE LIDERAZGO -->
+  <section id="liderazgo" class="relative py-20 bg-[#F9FAFB] overflow-hidden">
+
+    <!-- Estilos para la animación infinita -->
+    <style>
+      @keyframes scroll-infinita {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+
+        /* Se mueve exactamente la mitad del ancho total */
+      }
+
+      .carrusel-infinito {
+        display: flex;
+        width: max-content;
+        animation: scroll-infinita 35s linear infinite;
+        /* 35s es la velocidad, ajústala a tu gusto */
+      }
+
+      /* Opcional: Pausar el carrusel cuando pasan el mouse por encima */
+      .carrusel-infinito:hover {
+        animation-play-state: paused;
+      }
+    </style>
+
+    <div class="max-w-7xl mx-auto relative z-10 px-4">
+
+      <!-- 1. Encabezado Morado -->
+      <div
+        class="bg-[#7B007B] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-xl relative z-20">
+
+        <!-- Número y Título -->
+        <div class="flex items-center gap-6 md:w-1/2">
+          <span class="text-6xl md:text-8xl font-black text-[#D096D0] leading-none">05</span>
+          <h2 class="text-white text-3xl md:text-4xl font-black leading-tight uppercase">
+            Programas de<br>Liderazgo
+          </h2>
+        </div>
+
+        <!-- Texto descriptivo -->
+        <div class="md:w-1/2 text-white text-sm md:text-base leading-relaxed">
+          <p class="font-bold mb-3">
+            La Universidad Anáhuac ofrece diversos programas de liderazgo diseñados para impulsar tu desarrollo
+            personal, profesional y humano, a través de estas iniciativas podrás fortalecer habilidades como el
+            liderazgo, el trabajo en equipo, la responsabilidad social, el emprendimiento, el deporte, el arte y la vida
+            espiritual.
+
+          </p>
+          <p class="font-medium text-gray-200">
+            Participar en estos programas te permitirá crecer, conocer personas con intereses afines y enriquecer tu
+            experiencia universitaria.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative mt-16 pb-8 overflow-hidden">
+      <div class="carrusel-infinito gap-8 px-4">
+
+        <!-- ================= GRUPO 1 ================= -->
+        <!-- Tarjeta 1: Vértice -->
+        <div
+          class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+          <img src="/ruta-vertice.png" alt="Vértice" class="h-32 object-contain mb-6">
+          <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Vértice</span>
+        </div>
+
+        <!-- Tarjeta 2: Culmen -->
+        <div
+          class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+          <img src="/ruta-culmen.png" alt="Culmen" class="h-32 object-contain mb-6">
+          <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Culmen</span>
+        </div>
+
+        <!-- Tarjeta 3: Acción -->
+        <div
+          class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+          <img src="/ruta-accion.png" alt="Acción" class="h-32 object-contain mb-6">
+          <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Acción</span>
+        </div>
+
+        <!-- Tarjeta 4: IMEF -->
+        <div
+          class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+          <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+            <img src="/ruta-imef.png" alt="IMEF" class="h-20 object-contain">
+          </div>
+          <span class="font-black text-xl tracking-widest uppercase">IMEF</span>
+          <span class="text-xs font-bold text-center mt-2 uppercase">Ejecutivos en Finanzas</span>
+        </div>
+
+        <!-- Tarjeta 5: Pastoral -->
+        <div
+          class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+          <div class="bg-[#F8F5F1] p-4 rounded-xl mb-6 w-full flex justify-center">
+            <img src="/ruta-pastoral.png" alt="Pastoral" class="h-20 object-contain">
+          </div>
+          <span class="font-black text-xl tracking-widest uppercase">Pastoral</span>
+          <span class="text-xs font-bold text-center mt-2 uppercase">Vida Espiritual</span>
+        </div>
+
+        <!-- Tarjeta 6: ASUA -->
+        <div
+          class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+          <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+            <img src="/ruta-asua.png" alt="ASUA" class="h-20 object-contain">
+          </div>
+          <span class="font-black text-xl tracking-widest uppercase">ASUA</span>
+          <span class="text-xs font-bold text-center mt-2 uppercase">Compromiso Social</span>
+        </div>
+
+
+        <!-- ================= GRUPO 2 (COPIA EXACTA DEL GRUPO 1) ================= -->
+        <!-- Es obligatorio repetir exactamente las mismas tarjetas para que el ciclo sea invisible -->
+
+        <div
+          class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+          <img src="/ruta-vertice.png" alt="Vértice" class="h-32 object-contain mb-6">
+          <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Vértice</span>
+        </div>
+        <div
+          class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+          <img src="/ruta-culmen.png" alt="Culmen" class="h-32 object-contain mb-6">
+          <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Culmen</span>
+        </div>
+        <div
+          class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+          <img src="/ruta-accion.png" alt="Acción" class="h-32 object-contain mb-6">
+          <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Acción</span>
+        </div>
+        <div
+          class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+          <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+            <img src="/ruta-imef.png" alt="IMEF" class="h-20 object-contain">
+          </div>
+          <span class="font-black text-xl tracking-widest uppercase">IMEF</span>
+          <span class="text-xs font-bold text-center mt-2 uppercase">Ejecutivos en Finanzas</span>
+        </div>
+        <div
+          class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+          <div class="bg-[#F8F5F1] p-4 rounded-xl mb-6 w-full flex justify-center">
+            <img src="/ruta-pastoral.png" alt="Pastoral" class="h-20 object-contain">
+          </div>
+          <span class="font-black text-xl tracking-widest uppercase">Pastoral</span>
+          <span class="text-xs font-bold text-center mt-2 uppercase">Vida Espiritual</span>
+        </div>
+        <div
+          class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+          <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+            <img src="/ruta-asua.png" alt="ASUA" class="h-20 object-contain">
+          </div>
+          <span class="font-black text-xl tracking-widest uppercase">ASUA</span>
+          <span class="text-xs font-bold text-center mt-2 uppercase">Compromiso Social</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3. Botón inferior -->
+    <div class="mt-8 flex justify-center relative z-10 px-4">
+      <a href="programas.html"
+        class="border-4 border-[#7B007B] px-8 sm:px-12 py-3 text-[#7B007B] font-extrabold tracking-widest uppercase text-lg sm:text-xl hover:bg-[#7B007B] hover:text-white transition-all bg-white shadow-sm">
+        MÁS INFORMACIÓN
       </a>
-
-      <!-- Etiqueta amarilla flotante -->
-      <div class="absolute -top-10 right-0 md:top-0 md:right-48 bg-[#FFD13B] text-black font-extrabold text-sm md:text-base px-6 py-2 rounded-full rotate-[12deg] shadow-xl border border-black/5 z-20">
-        Básicos de tu<br>día a día
-      </div>
     </div>
 
-    <!-- ENVOLTURA DESLIZABLE PARA MÓVILES -->
-    <!-- Esto permite que en celular deslices a los lados, ocultando la barra de scroll para que se vea limpio -->
-    <div class="overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0 md:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-      
-      <!-- Forzamos un ancho mínimo de 900px para que las 3 columnas NUNCA se apilen -->
-      <div class="min-w-[900px] md:min-w-full">
-        
-        <!-- 2. Contenedor Gris con las Tarjetas (Fijamos a 3 columnas siempre) -->
-        <div class="bg-[#DFE1E5] rounded-3xl p-8 shadow-2xl relative z-10">
-          <div class="grid grid-cols-3 gap-8">
-            
-            <!-- Tarjeta 1: SIU -->
-            <div class="bg-white rounded-3xl p-6 flex flex-col h-48 relative shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-              <span class="text-[#772A8F] font-black text-xl absolute top-6 left-6">1</span>
-              <div class="flex-1 flex items-center justify-center">
-                <span class="text-5xl font-black text-anahuac tracking-wider">SIU</span>
-              </div>
-              <span class="font-extrabold text-center text-sm text-ink leading-tight">Sistema integral<br>Universitario</span>
-            </div>
+  </section>
 
-            <!-- Tarjeta 2: Brightspace -->
-            <div class="bg-white rounded-3xl p-6 flex flex-col h-48 relative shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-              <span class="text-[#772A8F] font-black text-xl absolute top-6 left-6">2</span>
-              <div class="flex-1 flex flex-col items-center justify-center">
-                <span class="text-2xl font-bold whitespace-nowrap">
-                  <span class="text-anahuac">D2L</span> <span class="text-gray-400 font-light">Brightspace</span>
-                </span>
-              </div>
-              <span class="font-extrabold text-center text-sm text-ink leading-tight">Brightspace</span>
-            </div>
 
-            <!-- Tarjeta 3: Biblioteca -->
-            <div class="bg-white rounded-3xl p-6 flex flex-col h-48 relative shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-              <span class="text-[#772A8F] font-black text-xl absolute top-6 left-6">3</span>
-              <div class="flex-1 flex items-center justify-center">
-                <i class="fa-solid fa-book-open text-5xl text-anahuac"></i>
-              </div>
-              <span class="font-extrabold text-center text-sm text-ink leading-tight">Biblioteca</span>
-            </div>
+  <!-- SECCION ANAHUAC LEADERSHIP SUMMARY  -->
+  <section id="leadership-summary" class="relative py-20 bg-[#f95d11] text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10 px-4">
 
-          </div>
+      <!-- Fila superior: Número y Títulos -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8">
+        <span class="text-6xl md:text-8xl font-black text-yellow-300 leading-none">06</span>
+        <div>
+          <h2 class="text-white text-3xl md:text-4xl font-black leading-tight uppercase tracking-wide">
+            Anáhuac Leadership Summary
+          </h2>
+          <h3 class="text-yellow-200 text-lg md:text-xl font-bold tracking-widest uppercase mt-1">
+            Portafolio de Estrellas
+          </h3>
         </div>
+      </div>
 
-        <!-- 3. Textos descriptivos y flechas (Fijados a 3 columnas también) -->
-        <div class="grid grid-cols-3 gap-8 mt-2">
-          
-          <!-- Descripción 1 -->
-          <div class="flex flex-col items-center px-4">
-            <svg class="h-12 w-12 text-white/80 mb-3" fill="none" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-4 4m4-4l4 4" />
-            </svg>
-            <p class="text-white text-center text-base font-medium leading-relaxed text-balance">
-              <span class="font-bold">1.</span> Aquí podrás realizar tu carga de materias, consultar calificaciones, realizar pagos, etc.
+      <!-- Descripción introductoria -->
+      <p class="text-sm md:text-base leading-relaxed text-white max-w-4xl mb-10">
+        Es una herramienta digital diseñada para motivarte a crecer no solo académicamente, sino también como persona. A
+        través de diversas actividades, podrás sumar estrellas en diversas habilidades blandas que forman parte de tu
+        desarrollo integral:
+      </p>
+
+      <!-- Contenedor de Habilidades Blandas (Barra morada arriba y tarjetas claras/moradas) -->
+      <div class="bg-black/15 rounded-xl overflow-hidden mb-10 shadow-md">
+        <div class="bg-[#581c87] text-center font-black text-lg md:text-xl text-white py-3 uppercase tracking-wider">
+          Habilidades blandas
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 p-4">
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Trabajo Colaborativo</div>
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Liderazgo</div>
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Pensamiento Crítico y Toma de Decisiones</div>
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Gestión de Proyectos</div>
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Creatividad e Innovación</div>
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Sentido de Trascendencia</div>
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Inteligencia Emocional</div>
+          <div
+            class="bg-[#a855f7] text-white text-center py-4 px-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center transition-transform hover:scale-105">
+            Investigación</div>
+        </div>
+      </div>
+
+      <!-- Sección inferior: Preguntas frecuentes y recuadro destacado -->
+      <div class="flex flex-col lg:flex-row justify-between items-stretch gap-8 pt-4">
+
+        <!-- Bloque de textos informativos -->
+        <div class="flex-1 space-y-6">
+          <div>
+            <h4 class="font-black text-lg text-white uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span class="text-yellow-300">•</span> ¿Por qué es importante?
+            </h4>
+            <p class="text-sm md:text-base leading-relaxed text-gray-100">
+              El Portafolio de Estrellas es obligatorio. Al final de tu carrera, se espera que hayas acumulado hasta 400
+              estrellas en cualquier habilidad blanda.
             </p>
           </div>
-
-          <!-- Descripción 2 -->
-          <div class="flex flex-col items-center px-4">
-            <svg class="h-12 w-12 text-white/80 mb-3" fill="none" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-4 4m4-4l4 4" />
-            </svg>
-            <p class="text-white text-center text-base font-medium leading-relaxed text-balance">
-              <span class="font-bold">2.</span> Aquí podrás visualizar tus materias en línea, entregar tareas, realizar evaluaciones, etc.
+          <div>
+            <h4 class="font-black text-lg text-white uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span class="text-yellow-300">•</span> ¿Cómo ganar estrellas?
+            </h4>
+            <p class="text-sm md:text-base leading-relaxed text-gray-100">
+              A lo largo del semestre, tendrás oportunidades de participar en talleres, conferencias, voluntariados,
+              actividades deportivas, eventos culturales, etc. Cada actividad tiene un número específico de estrellas
+              que se sumarán a tu portafolio. Al alcanzar un número determinado de estrellas, puedes obtener insignias
+              como reconocimiento a tu esfuerzo y participación.
             </p>
           </div>
-
-          <!-- Descripción 3 -->
-          <div class="flex flex-col items-center px-4">
-            <svg class="h-12 w-12 text-white/80 mb-3" fill="none" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-4 4m4-4l4 4" />
-            </svg>
-            <p class="text-white text-center text-base font-medium leading-relaxed text-balance">
-              <span class="font-bold">3.</span> Aquí podrás acceder a bases de datos científicas. Es un recurso clave para tus investigaciones y trabajos.
-            </p>
-          </div>
-
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SECCIÓN: PROGRAMAS DE LIDERAZGO -->
-<section id="liderazgo" class="relative py-20 bg-[#F9FAFB] overflow-hidden">
-  
-  <!-- Estilos para la animación infinita -->
-  <style>
-    @keyframes scroll-infinita {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); } /* Se mueve exactamente la mitad del ancho total */
-    }
-    .carrusel-infinito {
-      display: flex;
-      width: max-content;
-      animation: scroll-infinita 35s linear infinite; /* 35s es la velocidad, ajústala a tu gusto */
-    }
-    /* Opcional: Pausar el carrusel cuando pasan el mouse por encima */
-    .carrusel-infinito:hover {
-      animation-play-state: paused;
-    }
-  </style>
-
-  <div class="max-w-7xl mx-auto relative z-10 px-4">
-    
-    <!-- 1. Encabezado Morado -->
-    <div class="bg-[#7B007B] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-xl relative z-20">
-      
-      <!-- Número y Título -->
-      <div class="flex items-center gap-6 md:w-1/2">
-        <span class="text-6xl md:text-8xl font-black text-[#D096D0] leading-none">05</span>
-        <h2 class="text-white text-3xl md:text-4xl font-black leading-tight uppercase">
-          Programas de<br>Liderazgo
-        </h2>
-      </div>
-
-      <!-- Texto descriptivo -->
-      <div class="md:w-1/2 text-white text-sm md:text-base leading-relaxed">
-        <p class="font-bold mb-3">
-          La Universidad Anáhuac ofrece diversos programas de liderazgo diseñados para impulsar tu desarrollo personal, profesional y humano, a través de estas iniciativas podrás fortalecer habilidades como el liderazgo, el trabajo en equipo, la responsabilidad social, el emprendimiento, el deporte, el arte y la vida espiritual. 
-
-        </p>
-        <p class="font-medium text-gray-200">
-Participar en estos programas te permitirá crecer, conocer personas con intereses afines y enriquecer tu experiencia universitaria.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="relative mt-16 pb-8 overflow-hidden">
-    <div class="carrusel-infinito gap-8 px-4">
-      
-      <!-- ================= GRUPO 1 ================= -->
-      <!-- Tarjeta 1: Vértice -->
-      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
-        <img src="/ruta-vertice.png" alt="Vértice" class="h-32 object-contain mb-6">
-        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Vértice</span>
-      </div>
-
-      <!-- Tarjeta 2: Culmen -->
-      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
-        <img src="/ruta-culmen.png" alt="Culmen" class="h-32 object-contain mb-6">
-        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Culmen</span>
-      </div>
-
-      <!-- Tarjeta 3: Acción -->
-      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
-        <img src="/ruta-accion.png" alt="Acción" class="h-32 object-contain mb-6">
-        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Acción</span>
-      </div>
-
-      <!-- Tarjeta 4: IMEF -->
-      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
-        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
-          <img src="/ruta-imef.png" alt="IMEF" class="h-20 object-contain">
+        <!-- Tarjeta amarilla lateral destacada -->
+        <div
+          class="bg-[#FACC15] text-[#1E1B4B] p-8 rounded-2xl font-black text-xl md:text-2xl text-center flex items-center justify-center w-full lg:w-80 shadow-lg transition-transform hover:scale-105">
+          <p class="leading-snug uppercase tracking-wide">
+            ¡No dejes las estrellas para el final!
+          </p>
         </div>
-        <span class="font-black text-xl tracking-widest uppercase">IMEF</span>
-        <span class="text-xs font-bold text-center mt-2 uppercase">Ejecutivos en Finanzas</span>
-      </div>
 
-      <!-- Tarjeta 5: Pastoral -->
-      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
-        <div class="bg-[#F8F5F1] p-4 rounded-xl mb-6 w-full flex justify-center">
-          <img src="/ruta-pastoral.png" alt="Pastoral" class="h-20 object-contain">
-        </div>
-        <span class="font-black text-xl tracking-widest uppercase">Pastoral</span>
-        <span class="text-xs font-bold text-center mt-2 uppercase">Vida Espiritual</span>
-      </div>
-      
-      <!-- Tarjeta 6: ASUA -->
-      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
-        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
-          <img src="/ruta-asua.png" alt="ASUA" class="h-20 object-contain">
-        </div>
-        <span class="font-black text-xl tracking-widest uppercase">ASUA</span>
-        <span class="text-xs font-bold text-center mt-2 uppercase">Compromiso Social</span>
-      </div>
-
-
-      <!-- ================= GRUPO 2 (COPIA EXACTA DEL GRUPO 1) ================= -->
-      <!-- Es obligatorio repetir exactamente las mismas tarjetas para que el ciclo sea invisible -->
-      
-      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
-        <img src="/ruta-vertice.png" alt="Vértice" class="h-32 object-contain mb-6">
-        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Vértice</span>
-      </div>
-      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
-        <img src="/ruta-culmen.png" alt="Culmen" class="h-32 object-contain mb-6">
-        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Culmen</span>
-      </div>
-      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
-        <img src="/ruta-accion.png" alt="Acción" class="h-32 object-contain mb-6">
-        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Acción</span>
-      </div>
-      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
-        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
-          <img src="/ruta-imef.png" alt="IMEF" class="h-20 object-contain">
-        </div>
-        <span class="font-black text-xl tracking-widest uppercase">IMEF</span>
-        <span class="text-xs font-bold text-center mt-2 uppercase">Ejecutivos en Finanzas</span>
-      </div>
-      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
-        <div class="bg-[#F8F5F1] p-4 rounded-xl mb-6 w-full flex justify-center">
-          <img src="/ruta-pastoral.png" alt="Pastoral" class="h-20 object-contain">
-        </div>
-        <span class="font-black text-xl tracking-widest uppercase">Pastoral</span>
-        <span class="text-xs font-bold text-center mt-2 uppercase">Vida Espiritual</span>
-      </div>
-      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
-        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
-          <img src="/ruta-asua.png" alt="ASUA" class="h-20 object-contain">
-        </div>
-        <span class="font-black text-xl tracking-widest uppercase">ASUA</span>
-        <span class="text-xs font-bold text-center mt-2 uppercase">Compromiso Social</span>
       </div>
 
     </div>
-  </div>
+  </section>
 
-  <!-- 3. Botón inferior -->
-  <div class="mt-8 flex justify-center relative z-10 px-4">
-    <a href="programas.html" class="border-4 border-[#7B007B] px-8 sm:px-12 py-3 text-[#7B007B] font-extrabold tracking-widest uppercase text-lg sm:text-xl hover:bg-[#7B007B] hover:text-white transition-all bg-white shadow-sm">
-      MÁS INFORMACIÓN
-    </a>
-  </div>
-
-</section>
 
   <!-- ===================== FOOTER ===================== -->
   <footer id="contacto" class="bg-black py-16 text-white">
@@ -704,30 +948,47 @@ Participar en estos programas te permitirá crecer, conocer personas con interes
         <div>
           <h3 class="font-heading text-sm font-semibold uppercase tracking-wide text-gray-300">Enlaces Oficiales</h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-400">
-            <li><a href="https://rua-ssb-prod.ban.anahuac.mx/RUA_UAO/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu#pageName=bmenu--P_StuMainMnu___UID1&pageReferrerId=&pageDepth=2&options=false" class="transition-colors hover:text-anahuac">Portal del Estudiante</a></li>
-            <li><a href="https://www.anahuac.mx/oaxaca/calendario-2026" class="transition-colors hover:text-anahuac">Calendario Académico</a></li>
-            <li><a href="https://biblioteca-anahuac.vercel.app/" class="transition-colors hover:text-anahuac">Biblioteca Digital Medicina</a></li>
-            <li><a href="https://www.anahuac.mx/oaxaca/compendio-reglamentario" class="transition-colors hover:text-anahuac">Reglamentos</a></li>
+            <li><a
+                href="https://rua-ssb-prod.ban.anahuac.mx/RUA_UAO/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu#pageName=bmenu--P_StuMainMnu___UID1&pageReferrerId=&pageDepth=2&options=false"
+                class="transition-colors hover:text-anahuac">Portal del Estudiante</a></li>
+            <li><a href="https://www.anahuac.mx/oaxaca/calendario-2026"
+                class="transition-colors hover:text-anahuac">Calendario Académico</a></li>
+            <li><a href="https://biblioteca-anahuac.vercel.app/" class="transition-colors hover:text-anahuac">Biblioteca
+                Digital Medicina</a></li>
+            <li><a href="https://www.anahuac.mx/oaxaca/compendio-reglamentario"
+                class="transition-colors hover:text-anahuac">Reglamentos</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="font-heading text-sm font-semibold uppercase tracking-wide text-gray-300">Contactos de Emergencia</h3>
+          <h3 class="font-heading text-sm font-semibold uppercase tracking-wide text-gray-300">Contactos de Emergencia
+          </h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-400">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-anahuac"></i> Seguridad: (951) 000-0000</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-briefcase-medical text-anahuac"></i> Servicio Médico: Ext. 123</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-anahuac"></i> Seguridad: (951) 000-0000
+            </li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-briefcase-medical text-anahuac"></i> Servicio
+              Médico: Ext. 123</li>
             <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-anahuac"></i> ayuda@anahuac.mx</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-anahuac"></i> San Raymundo Jalpan, Oax.</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-anahuac"></i> San Raymundo
+              Jalpan, Oax.</li>
           </ul>
         </div>
 
         <div>
           <h3 class="font-heading text-sm font-semibold uppercase tracking-wide text-gray-300">Síguenos</h3>
           <div class="mt-4 flex gap-3">
-            <a href="#" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" aria-label="TikTok" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Facebook"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all hover:scale-110 hover:bg-anahuac"><i
+                class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
       </div>
@@ -738,7 +999,7 @@ Participar en estos programas te permitirá crecer, conocer personas con interes
     </div>
   </footer>
 
-  
+
 
   <!-- ===================== VANILLA JS ===================== -->
   <script>
@@ -758,13 +1019,13 @@ Participar en estos programas te permitirá crecer, conocer personas con interes
     grid.innerHTML = secciones.map(function (s) {
       return (
         '<a href="' + s.href + '" class="fade-in group flex flex-col items-start gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-anahuac/30 hover:shadow-xl">' +
-          '<span class="flex h-14 w-14 items-center justify-center rounded-xl bg-anahuac/10 text-2xl text-anahuac transition-colors group-hover:bg-anahuac group-hover:text-white">' +
-            '<i class="fa-solid ' + s.icon + '"></i>' +
-          '</span>' +
-          '<h3 class="font-heading text-base font-semibold leading-snug text-ink">' + s.title + '</h3>' +
-          '<span class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-anahuac opacity-0 transition-opacity group-hover:opacity-100">' +
-            'Ver más <i class="fa-solid fa-arrow-right text-xs"></i>' +
-          '</span>' +
+        '<span class="flex h-14 w-14 items-center justify-center rounded-xl bg-anahuac/10 text-2xl text-anahuac transition-colors group-hover:bg-anahuac group-hover:text-white">' +
+        '<i class="fa-solid ' + s.icon + '"></i>' +
+        '</span>' +
+        '<h3 class="font-heading text-base font-semibold leading-snug text-ink">' + s.title + '</h3>' +
+        '<span class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-anahuac opacity-0 transition-opacity group-hover:opacity-100">' +
+        'Ver más <i class="fa-solid fa-arrow-right text-xs"></i>' +
+        '</span>' +
         '</a>'
       );
     }).join('');
@@ -784,4 +1045,5 @@ Participar en estos programas te permitirá crecer, conocer personas con interes
     });
   </script>
 </body>
+
 </html>

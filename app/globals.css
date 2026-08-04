@@ -163,6 +163,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -177,10 +178,12 @@
       transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: opacity, transform;
   }
+
   .fade-in-section.is-visible {
     opacity: 1;
     transform: none;
   }
+
   @media (prefers-reduced-motion: reduce) {
     .fade-in-section {
       opacity: 1;
@@ -188,4 +191,122 @@
       transition: none;
     }
   }
+}
+
+.leadership-summary {
+  background-color: #f95d11;
+  /* Naranja de fondo base */
+  color: #ffffff;
+  font-family: sans-serif;
+  padding: 40px 20px;
+}
+
+.leadership-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.number-tag {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.titles h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.titles h3 {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.leadership-intro {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 900px;
+}
+
+/* Habilidades Blandas Grid */
+.skills-container {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.skills-title-bar {
+  background-color: #581c87;
+  /* Morado oscuro */
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 15px;
+}
+
+.skill-box {
+  background-color: #a855f7;
+  /* Morado claro */
+  text-align: center;
+  padding: 15px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95krem;
+}
+
+/* Footer y FAQ */
+.leadership-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.faq-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Tarjeta amarilla lateral */
+.alert-badge-box {
+  background-color: #facc15;
+  /* Amarillo */
+  color: #1e1b4b;
+  padding: 30px;
+  border-radius: 6px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
