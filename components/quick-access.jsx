@@ -16,7 +16,7 @@ const items = [
     title: 'Sociedad de Alumnos',
     description: '¡Tu voz y representación estudiantil!',
     icon: Users,
-    href: '/sociedad_alumnos.html',
+    href: '/sociedad_alumnos',
   },
   {
     title: '¿Cómo funciona la facultad?',
