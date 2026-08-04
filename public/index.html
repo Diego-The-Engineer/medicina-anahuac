@@ -144,10 +144,8 @@
   </section>
   
   <!-- ===================== FEATURED: SOCIEDAD DE ALUMNOS ===================== -->
-   <!-- SECCIÓN: SOCIEDAD DE ALUMNOS -->
 <section id="sociedad" class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 bg-[#F9FAFB]">
-    
-    <!-- 1. Encabezado y Texto (Con ancho máximo para mejor lectura) -->
+
     <div class="max-w-4xl mx-auto text-center mb-12">
         <h2 class="text-4xl font-extrabold text-[#1F2937] tracking-tight sm:text-5xl">
             Sociedad de Alumnos
@@ -308,6 +306,86 @@
         </div>
     </div>
 </div>
+<section id="recursos" class="bg-gray-50 py-20">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-[#1F2937] tracking-tight sm:text-5xl">
+            Recursos Esenciales
+        </h2>
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+            Aquí encontrarás los documentos y recursos más importantes para tu vida universitaria. Accede fácilmente a la información que consultarás durante tu carrera.
+        </p>
+    </div>
+    <div class="max-w-6xl mx-auto relative z-10">
+    
+    <!-- Grid de 3 columnas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+
+      <!-- TARJETA 1: Calendario -->
+      <div class="flex flex-col items-center">
+        <div class="min-h-[5rem] flex items-end justify-center mb-4">
+          <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
+            Calendario<br>académico 2026
+          </h3>
+        </div>
+        
+        <!-- Tarjeta Morada -->
+        <div class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
+          <!-- Imagen -->
+          <img 
+            src="Calendario.png" 
+            alt="Calendario 2026" 
+            class="w-full aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner"
+          >
+          <!-- Botón -->
+          <a href="https://www.anahuac.mx/oaxaca/calendario-2026" class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
+            <span class="underline underline-offset-4">Acceder</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- TARJETA 2: Plan de estudios -->
+      <div class="flex flex-col items-center">
+        <div class="min-h-[5rem] flex items-end justify-center mb-4">
+          <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
+            Plan de estudios
+          </h3>
+        </div>
+        
+        <div class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
+          <img 
+            src="Plan.png" 
+            alt="Plan de estudios" 
+            class="w-full aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner"
+          >
+          <a href="PLAN MEDICINA 2026.pdf" class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
+            <span class="underline underline-offset-4">Acceder</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- TARJETA 3: Mapa -->
+      <div class="flex flex-col items-center">
+        <div class="min-h-[5rem] flex items-end justify-center mb-4">
+          <h3 class="text-black font-extrabold text-2xl md:text-3xl text-center leading-tight">
+            Mapa<br>Universitario
+          </h3>
+        </div>
+        
+        <div class="bg-[#FF5900] rounded-[2rem] p-5 w-full max-w-sm flex flex-col items-center shadow-2xl transition-transform hover:-translate-y-2 duration-300">
+          <img 
+            src="Mapita.png" 
+            alt="Mapa Universitario" 
+            class="w-full aspect-[4/3] sm:aspect-square object-cover rounded-2xl mb-6 bg-white shadow-inner"
+          >
+          <a href="MAPA UNIVERSIDAD.png" class="border border-white w-4/5 py-3 text-center text-white font-bold tracking-widest uppercase text-sm hover:bg-white hover:text-[#FF5900] transition-colors">
+            <span class="underline underline-offset-4">Acceder</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!-- ===================== FOOTER ===================== -->
   <footer id="contacto" class="bg-black py-16 text-white">
     <div class="mx-auto max-w-6xl px-4">
@@ -363,16 +441,16 @@
 
   <!-- ===================== VANILLA JS ===================== -->
   <script>
-    // 1) Render the 8 quick-access cards
+    // 1) Render the 9 quick-access cards
     const secciones = [
       { icon: 'fa-people-group', title: 'Sociedad de Alumnos', href: '#sociedad' },
+      { icon: 'fa-book', title: 'Recursos esenciales', href: '#recursos' },
       { icon: 'fa-sitemap', title: '¿Cómo funciona la facultad?', href: 'como_funciona_facultad.html' },
-      { icon: 'fa-scale-balanced', title: 'Reglamentos', href: 'https://anahuac.mx/oaxaca/compendio-reglamentario' },
       { icon: 'fa-building-columns', title: 'Servicios Universitarios', href: '#' },
       { icon: 'fa-hand-holding-dollar', title: 'Becas', href: 'https://oaxaca.anahuac.mx/licenciaturas/becas' },
       { icon: 'fa-book-open-reader', title: 'Carga de materias', href: '#' },
       { icon: 'fa-flask-vial', title: 'Recursos para estudiar', href: 'https://biblioteca-anahuac.vercel.app/' },
-      { icon: 'fa-headset', title: 'Ayuda y Contacto', href: '#' },
+      { icon: 'fa-headset', title: 'Ayuda y Contacto', href: '#contacto' },
     ];
 
     const grid = document.getElementById('grid-secciones');

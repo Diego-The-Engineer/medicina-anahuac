@@ -8,6 +8,7 @@ import {
   Library,
   LifeBuoy,
   ArrowUpRight,
+  Book,
 } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
@@ -16,19 +17,19 @@ const items = [
     title: 'Sociedad de Alumnos',
     description: '¡Tu voz y representación estudiantil!',
     icon: Users,
-    href: '/sociedad-alumnos',
+    href: '#sociedad',
+  },
+  {
+    title: 'Recursos esenciales',
+    description: 'Aquí encontrarás los documentos y recursos más importantes para tu vida universitaria.',
+    icon: Book,
+    href: '#recursos',
   },
   {
     title: '¿Cómo funciona la facultad?',
     description: 'Estructura, autoridades y procesos.',
     icon: Building2,
     href: '#secciones',
-  },
-  {
-    title: 'Reglamentos',
-    description: 'Normativas y lineamientos clave.',
-    icon: ScrollText,
-    href: 'https://anahuac.mx/oaxaca/compendio-reglamentario',
   },
   {
     title: 'Servicios Universitarios',
@@ -60,6 +61,7 @@ const items = [
     icon: LifeBuoy,
     href: '#contacto',
   },
+  
 ]
 export function QuickAccess() {
   return (
