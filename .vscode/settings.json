@@ -11,6 +11,10 @@
         "editorGroupHeader.tabsBackground": "#1F2229",
         "tab.inactiveBackground": "#23282E",
         "menu.background": "#2A2F37",
-        "menu.selectionBackground": "#0E629D"
-    }
+        "menu.selectionBackground": "#0E629D",
+        
+    },
+    "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore"
 }

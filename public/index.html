@@ -233,7 +233,7 @@
             <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-anahuac"></i> Seguridad: (951) 000-0000</li>
             <li class="flex items-center gap-2"><i class="fa-solid fa-briefcase-medical text-anahuac"></i> Servicio Médico: Ext. 123</li>
             <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-anahuac"></i> ayuda@anahuac.mx</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-anahuac"></i> Oaxaca de Juárez, Oax.</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-anahuac"></i> San Raymundo Jalpan, Oax.</li>
           </ul>
         </div>
 
@@ -258,20 +258,20 @@
   <script>
     // 1) Render the 8 quick-access cards
     const secciones = [
-      { icon: 'fa-people-group', title: 'Sociedad de Alumnos' },
-      { icon: 'fa-sitemap', title: '¿Cómo funciona la facultad?' },
-      { icon: 'fa-scale-balanced', title: 'Reglamentos' },
-      { icon: 'fa-building-columns', title: 'Servicios Universitarios' },
-      { icon: 'fa-hand-holding-dollar', title: 'Becas' },
-      { icon: 'fa-book-open-reader', title: 'Carga de materias' },
-      { icon: 'fa-flask-vial', title: 'Recursos para estudiar' },
-      { icon: 'fa-headset', title: 'Ayuda y Contacto' },
+      { icon: 'fa-people-group', title: 'Sociedad de Alumnos', href: 'sociedad_alumnos.html' },
+      { icon: 'fa-sitemap', title: '¿Cómo funciona la facultad?', href: 'como_funciona_facultad.html' },
+      { icon: 'fa-scale-balanced', title: 'Reglamentos', href: 'https://anahuac.mx/oaxaca/compendio-reglamentario' },
+      { icon: 'fa-building-columns', title: 'Servicios Universitarios', href: '#' },
+      { icon: 'fa-hand-holding-dollar', title: 'Becas', href: 'https://oaxaca.anahuac.mx/licenciaturas/becas' },
+      { icon: 'fa-book-open-reader', title: 'Carga de materias', href: '#' },
+      { icon: 'fa-flask-vial', title: 'Recursos para estudiar', href: 'https://biblioteca-anahuac.vercel.app/' },
+      { icon: 'fa-headset', title: 'Ayuda y Contacto', href: '#' },
     ];
 
     const grid = document.getElementById('grid-secciones');
     grid.innerHTML = secciones.map(function (s) {
       return (
-        '<a href="#" class="fade-in group flex flex-col items-start gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-anahuac/30 hover:shadow-xl">' +
+        '<a href="' + s.href + '" class="fade-in group flex flex-col items-start gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-anahuac/30 hover:shadow-xl">' +
           '<span class="flex h-14 w-14 items-center justify-center rounded-xl bg-anahuac/10 text-2xl text-anahuac transition-colors group-hover:bg-anahuac group-hover:text-white">' +
             '<i class="fa-solid ' + s.icon + '"></i>' +
           '</span>' +
