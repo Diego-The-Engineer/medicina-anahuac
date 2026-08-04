@@ -539,6 +539,152 @@
     </div>
   </div>
 </section>
+
+<!-- SECCIÓN: PROGRAMAS DE LIDERAZGO -->
+<section id="liderazgo" class="relative py-20 bg-[#F9FAFB] overflow-hidden">
+  
+  <!-- Estilos para la animación infinita -->
+  <style>
+    @keyframes scroll-infinita {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); } /* Se mueve exactamente la mitad del ancho total */
+    }
+    .carrusel-infinito {
+      display: flex;
+      width: max-content;
+      animation: scroll-infinita 35s linear infinite; /* 35s es la velocidad, ajústala a tu gusto */
+    }
+    /* Opcional: Pausar el carrusel cuando pasan el mouse por encima */
+    .carrusel-infinito:hover {
+      animation-play-state: paused;
+    }
+  </style>
+
+  <div class="max-w-7xl mx-auto relative z-10 px-4">
+    
+    <!-- 1. Encabezado Morado -->
+    <div class="bg-[#7B007B] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-xl relative z-20">
+      
+      <!-- Número y Título -->
+      <div class="flex items-center gap-6 md:w-1/2">
+        <span class="text-6xl md:text-8xl font-black text-[#D096D0] leading-none">05</span>
+        <h2 class="text-white text-3xl md:text-4xl font-black leading-tight uppercase">
+          Programas de<br>Liderazgo
+        </h2>
+      </div>
+
+      <!-- Texto descriptivo -->
+      <div class="md:w-1/2 text-white text-sm md:text-base leading-relaxed">
+        <p class="font-bold mb-3">
+          La Universidad Anáhuac ofrece diversos programas de liderazgo diseñados para impulsar tu desarrollo personal, profesional y humano, a través de estas iniciativas podrás fortalecer habilidades como el liderazgo, el trabajo en equipo, la responsabilidad social, el emprendimiento, el deporte, el arte y la vida espiritual. 
+
+        </p>
+        <p class="font-medium text-gray-200">
+Participar en estos programas te permitirá crecer, conocer personas con intereses afines y enriquecer tu experiencia universitaria.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative mt-16 pb-8 overflow-hidden">
+    <div class="carrusel-infinito gap-8 px-4">
+      
+      <!-- ================= GRUPO 1 ================= -->
+      <!-- Tarjeta 1: Vértice -->
+      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+        <img src="/ruta-vertice.png" alt="Vértice" class="h-32 object-contain mb-6">
+        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Vértice</span>
+      </div>
+
+      <!-- Tarjeta 2: Culmen -->
+      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+        <img src="/ruta-culmen.png" alt="Culmen" class="h-32 object-contain mb-6">
+        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Culmen</span>
+      </div>
+
+      <!-- Tarjeta 3: Acción -->
+      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+        <img src="/ruta-accion.png" alt="Acción" class="h-32 object-contain mb-6">
+        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Acción</span>
+      </div>
+
+      <!-- Tarjeta 4: IMEF -->
+      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+          <img src="/ruta-imef.png" alt="IMEF" class="h-20 object-contain">
+        </div>
+        <span class="font-black text-xl tracking-widest uppercase">IMEF</span>
+        <span class="text-xs font-bold text-center mt-2 uppercase">Ejecutivos en Finanzas</span>
+      </div>
+
+      <!-- Tarjeta 5: Pastoral -->
+      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+        <div class="bg-[#F8F5F1] p-4 rounded-xl mb-6 w-full flex justify-center">
+          <img src="/ruta-pastoral.png" alt="Pastoral" class="h-20 object-contain">
+        </div>
+        <span class="font-black text-xl tracking-widest uppercase">Pastoral</span>
+        <span class="text-xs font-bold text-center mt-2 uppercase">Vida Espiritual</span>
+      </div>
+      
+      <!-- Tarjeta 6: ASUA -->
+      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+          <img src="/ruta-asua.png" alt="ASUA" class="h-20 object-contain">
+        </div>
+        <span class="font-black text-xl tracking-widest uppercase">ASUA</span>
+        <span class="text-xs font-bold text-center mt-2 uppercase">Compromiso Social</span>
+      </div>
+
+
+      <!-- ================= GRUPO 2 (COPIA EXACTA DEL GRUPO 1) ================= -->
+      <!-- Es obligatorio repetir exactamente las mismas tarjetas para que el ciclo sea invisible -->
+      
+      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+        <img src="/ruta-vertice.png" alt="Vértice" class="h-32 object-contain mb-6">
+        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Vértice</span>
+      </div>
+      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+        <img src="/ruta-culmen.png" alt="Culmen" class="h-32 object-contain mb-6">
+        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Culmen</span>
+      </div>
+      <div class="w-64 h-80 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105">
+        <img src="/ruta-accion.png" alt="Acción" class="h-32 object-contain mb-6">
+        <span class="text-[#7B007B] font-black text-xl tracking-widest uppercase">Acción</span>
+      </div>
+      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+          <img src="/ruta-imef.png" alt="IMEF" class="h-20 object-contain">
+        </div>
+        <span class="font-black text-xl tracking-widest uppercase">IMEF</span>
+        <span class="text-xs font-bold text-center mt-2 uppercase">Ejecutivos en Finanzas</span>
+      </div>
+      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+        <div class="bg-[#F8F5F1] p-4 rounded-xl mb-6 w-full flex justify-center">
+          <img src="/ruta-pastoral.png" alt="Pastoral" class="h-20 object-contain">
+        </div>
+        <span class="font-black text-xl tracking-widest uppercase">Pastoral</span>
+        <span class="text-xs font-bold text-center mt-2 uppercase">Vida Espiritual</span>
+      </div>
+      <div class="w-64 h-80 bg-[#E83573] rounded-2xl shadow-md flex flex-col items-center justify-center p-6 flex-shrink-0 transition-transform hover:scale-105 text-white">
+        <div class="bg-white p-4 rounded-xl mb-6 w-full flex justify-center">
+          <img src="/ruta-asua.png" alt="ASUA" class="h-20 object-contain">
+        </div>
+        <span class="font-black text-xl tracking-widest uppercase">ASUA</span>
+        <span class="text-xs font-bold text-center mt-2 uppercase">Compromiso Social</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. Botón inferior -->
+  <div class="mt-8 flex justify-center relative z-10 px-4">
+    <a href="programas.html" class="border-4 border-[#7B007B] px-8 sm:px-12 py-3 text-[#7B007B] font-extrabold tracking-widest uppercase text-lg sm:text-xl hover:bg-[#7B007B] hover:text-white transition-all bg-white shadow-sm">
+      MÁS INFORMACIÓN
+    </a>
+  </div>
+
+</section>
+
   <!-- ===================== FOOTER ===================== -->
   <footer id="contacto" class="bg-black py-16 text-white">
     <div class="mx-auto max-w-6xl px-4">
