@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programas de Liderazgo | Universidad Anáhuac Oaxaca</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Google Fonts: Poppins + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'vertice': '#D81E5B',
+            'culmen': '#B48629',
+            'accion': '#F58220',
+            'asua': '#1A3668',
+            ink: '#1F2937',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Poppins', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-[#F9FAFB] antialiased text-gray-700 min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-3">
+        <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#7B007B] text-white">
+          <i class="fa-solid fa-users-viewfinder text-xl"></i>
+        </span>
+        <span class="flex flex-col leading-none">
+          <span class="font-heading text-lg font-bold text-ink">Programas de Liderazgo</span>
+          <span class="text-xs text-gray-500 font-medium">Formación Integral Anáhuac</span>
+        </span>
+      </div>
+      <a href="index.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#7B007B] hover:underline bg-[#7B007B]/10 px-4 py-2 rounded-lg transition-colors">
+        <i class="fa-solid fa-arrow-left"></i> Volver
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="flex-1 max-w-7xl mx-auto py-12 px-4 sm:px-6 w-full space-y-16">
+    
+    <!-- 1. VÉRTICE -->
+    <section id="vertice" class="bg-white rounded-3xl shadow-xl overflow-hidden border-t-[12px] border-vertice relative">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Izquierda: Info y Fotos -->
+        <div class="p-8 md:p-12 lg:pr-8">
+          <img src="/ruta-logo-vertice.png" alt="Logo Vértice" class="h-16 object-contain mb-6">
+          <h2 class="sr-only">Vértice - Programa de Excelencia Anáhuac</h2>
+          <p class="text-base leading-relaxed mb-4">
+            Vértice Anáhuac es un <strong class="text-ink">Programa de Excelencia</strong> para la formación integral de alumnos destacados en su carrera.
+          </p>
+          <p class="text-base leading-relaxed mb-8">
+            Su objetivo es formar líderes que transformen a la sociedad a través del servicio y la excelencia profesional. Permite desarrollar habilidades blandas como la comunicación, el trabajo en equipo y la empatía.
+          </p>
+          <!-- Galería de imágenes representativas -->
+          <div class="grid grid-cols-2 gap-4">
+            <img src="/ruta-foto-vertice1.jpg" alt="Generación Vértice" class="rounded-xl w-full h-32 object-cover bg-gray-200">
+            <img src="/ruta-foto-vertice2.jpg" alt="Evento Vértice" class="rounded-xl w-full h-32 object-cover bg-gray-200">
+          </div>
+        </div>
+        
+        <!-- Derecha: Detalles (Con fondo sutil) -->
+        <div class="bg-vertice/5 p-8 md:p-12 lg:pl-8 border-l border-vertice/10">
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-heading text-vertice text-lg font-bold">Duración</h3>
+              <p class="font-medium text-ink">3 años</p>
+            </div>
+            
+            <div>
+              <h3 class="font-heading text-vertice text-lg font-bold">Requisitos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-ink">
+                <li>Tener promedio mínimo de 8.5</li>
+                <li>Carta de recomendación de tu director de carrera</li>
+                <li>Curriculum</li>
+                <li>Carta de motivos de ingreso al programa</li>
+                <li>Video de presentación</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-heading text-vertice text-lg font-bold">Beneficios</h3>
+              <ul class="list-disc list-inside space-y-2 mt-2 text-sm text-ink">
+                <li><strong>Talleres especializados</strong> (Curriculum vitae, lego Serious play, protocolo y etiqueta, oratoria, etc.)</li>
+                <li><strong>Encuentros con líderes de acción positiva</strong> (Figuras influyentes en la sociedad)</li>
+                <li><strong>Viajes formativos</strong></li>
+              </ul>
+              <p class="mt-4 font-bold text-vertice">Dos diplomados (Diplomado en liderazgo Anáhuac y en competencias laborales)</p>
+            </div>
+
+            <!-- Caja Resaltada -->
+            <div class="bg-[#FCD34D] rounded-xl p-5 flex flex-col sm:flex-row justify-between gap-4 mt-6">
+              <div>
+                <h4 class="font-heading font-bold text-ink">Eventos destacados:</h4>
+                <ul class="list-disc list-inside text-sm text-ink mt-1">
+                  <li>Festival del taco</li>
+                  <li>Congreso "Sueña en grande"</li>
+                </ul>
+              </div>
+              <div class="text-right sm:border-l sm:border-ink/20 sm:pl-4">
+                <h4 class="font-heading font-bold text-vertice">Proceso de admisión:</h4>
+                <p class="text-sm font-medium text-ink">Agosto 2026</p>
+              </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="flex items-center justify-between pt-6 border-t border-vertice/20 mt-6">
+              <div class="text-xs">
+                <span class="font-bold text-ink block">Coordinador:</span> Josie Hernández Arrazola<br>
+                <a href="mailto:Josie.hernandez@anahuac.mx" class="text-vertice hover:underline">Josie.hernandez@anahuac.mx</a>
+              </div>
+              <a href="https://instagram.com/VERTICEOAXACA" target="_blank" class="flex items-center gap-2 text-vertice hover:opacity-80 transition-opacity">
+                <i class="fa-brands fa-instagram text-2xl"></i>
+                <span class="font-bold text-sm tracking-wider uppercase underline underline-offset-4">verticeoaxaca</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CULMEN -->
+    <section id="culmen" class="bg-white rounded-3xl shadow-xl overflow-hidden border-t-[12px] border-culmen relative">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="p-8 md:p-12 lg:pr-8">
+          <img src="/ruta-logo-culmen.png" alt="Logo Culmen" class="h-20 object-contain mb-6">
+          <p class="text-base leading-relaxed mb-8">
+            Se enfoca en <strong class="text-ink">Arte y Cultura</strong>, su misión es potenciar el liderazgo positivo de sus integrantes a partir del reconocimiento de los contextos artísticos-culturales que los rodean, así como la creación de proyectos que impacten a la comunidad.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <img src="/ruta-foto-culmen1.jpg" alt="Arte Culmen" class="rounded-xl w-full h-40 object-cover bg-gray-200">
+            <img src="/ruta-foto-culmen2.jpg" alt="Exposición Culmen" class="rounded-xl w-full h-40 object-cover bg-gray-200">
+          </div>
+        </div>
+        
+        <div class="bg-culmen/5 p-8 md:p-12 lg:pl-8 border-l border-culmen/10">
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-heading text-culmen text-lg font-bold">Duración</h3>
+              <p class="font-medium text-ink">2 años</p>
+            </div>
+            
+            <div>
+              <h3 class="font-heading text-culmen text-lg font-bold">Requisitos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-ink">
+                <li>Tener promedio mínimo de 8.0</li>
+                <li>Carta de recomendación de tu director de carrera</li>
+                <li>Curriculum</li>
+                <li>Carta de motivos de ingreso al programa</li>
+                <li>Video de presentación</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-heading text-culmen text-lg font-bold">Beneficios</h3>
+              <ul class="list-disc list-inside space-y-2 mt-2 text-sm text-ink">
+                <li><strong>Viajes Nacionales</strong> (Congreso Nacional de Culmen y viajes formativos)</li>
+                <li><strong>Talleres artísticos - culturales</strong></li>
+                <li><strong>Seminarios</strong></li>
+                <li><strong>Encuentros con líderes de acción positiva</strong> (Figuras influyentes en el arte y cultura)</li>
+              </ul>
+              <p class="mt-4 font-bold text-culmen">Diplomado con valor curricular en Gestión Cultural.</p>
+            </div>
+
+            <div class="bg-[#FCD34D] rounded-xl p-5 flex flex-col sm:flex-row justify-between gap-4 mt-6">
+              <div>
+                <h4 class="font-heading font-bold text-ink">Eventos destacados:</h4>
+                <ul class="list-disc list-inside text-sm text-ink mt-1">
+                  <li>Feria de las Artesanías</li>
+                  <li>De la Anáhuac al Mictlán</li>
+                </ul>
+              </div>
+              <div class="text-right sm:border-l sm:border-ink/20 sm:pl-4">
+                <h4 class="font-heading font-bold text-culmen">Proceso de inscripción:</h4>
+                <p class="text-sm font-medium text-ink">Agosto 2026</p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-6 border-t border-culmen/20 mt-6">
+              <div class="text-xs">
+                <span class="font-bold text-ink block">Coordinador:</span> Concepción Jazmín Santos Estrada<br>
+                <a href="mailto:concepcion.santoses@anahuac.mx" class="text-culmen hover:underline">concepcion.santoses@anahuac.mx</a>
+              </div>
+              <a href="https://instagram.com/CULMEN_UAO" target="_blank" class="flex items-center gap-2 text-culmen hover:opacity-80 transition-opacity">
+                <i class="fa-brands fa-instagram text-2xl"></i>
+                <span class="font-bold text-sm tracking-wider uppercase underline underline-offset-4">culmen_uao</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ACCIÓN -->
+    <section id="accion" class="bg-white rounded-3xl shadow-xl overflow-hidden border-t-[12px] border-accion relative">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="p-8 md:p-12 lg:pr-8">
+          <img src="/ruta-logo-accion.png" alt="Logo Acción" class="h-24 object-contain mb-6">
+          <p class="text-base leading-relaxed mb-4">
+            Es el <strong class="text-ink">Programa de Liderazgo Deportivo</strong> de la Universidad Anáhuac Oaxaca enfocado a alumnos con destacado rendimiento deportivo.
+          </p>
+          <p class="text-base leading-relaxed mb-8">
+            En <strong class="text-ink">ACCIÓN</strong>, además del liderazgo, se busca que por medio de las aptitudes atléticas se fomente la participación, en análisis, la toma de decisiones, el trabajo, la convivencia y valores familiares.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <img src="/ruta-foto-accion1.jpg" alt="Deportistas Acción" class="rounded-xl w-full h-32 object-cover bg-gray-200">
+            <img src="/ruta-foto-accion2.jpg" alt="Actividad Acción" class="rounded-xl w-full h-32 object-cover bg-gray-200">
+          </div>
+        </div>
+        
+        <div class="bg-accion/5 p-8 md:p-12 lg:pl-8 border-l border-accion/10">
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-heading text-accion text-lg font-bold">Duración</h3>
+              <p class="font-medium text-ink">2 años</p>
+            </div>
+            
+            <div>
+              <h3 class="font-heading text-accion text-lg font-bold">Requisitos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-ink">
+                <li>Tener promedio mínimo de 8.5</li>
+                <li>Carta de recomendación de tu director de carrera</li>
+                <li>Curriculum</li>
+                <li>Carta de motivos de ingreso al programa</li>
+                <li>Video de presentación</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-heading text-accion text-lg font-bold">Beneficios</h3>
+              <ul class="list-disc list-inside space-y-2 mt-2 text-sm text-ink">
+                <li><strong>Talleres especializados</strong> (Mindfulness, negociación, marketing y relaciones públicas en el deporte, design thinking, etc.)</li>
+                <li><strong>Encuentros con líderes de acción positiva</strong> (especialistas en el ámbito deportivo)</li>
+                <li><strong>Viajes formativos</strong> (Seminarios acción)</li>
+              </ul>
+              <p class="mt-4 font-bold text-accion">Diplomado en Gestión de Proyectos Deportivos</p>
+            </div>
+
+            <div class="bg-[#FCD34D] rounded-xl p-5 flex flex-col sm:flex-row justify-between gap-4 mt-6">
+              <div>
+                <h4 class="font-heading font-bold text-ink">Eventos destacados:</h4>
+                <ul class="list-disc list-inside text-sm text-ink mt-1">
+                  <li>Día A</li>
+                  <li>Copa Acción</li>
+                </ul>
+              </div>
+              <div class="text-right sm:border-l sm:border-ink/20 sm:pl-4">
+                <h4 class="font-heading font-bold text-accion">Proceso de inscripción:</h4>
+                <p class="text-sm font-medium text-ink">Agosto 2026</p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-6 border-t border-accion/20 mt-6">
+              <div class="text-xs">
+                <span class="font-bold text-ink block">Coordinador:</span> Jose Lorenzo Martinez<br>
+                <a href="#" class="text-accion hover:underline">Contactar Coordinador</a>
+              </div>
+              <a href="https://instagram.com/ACCION_UAO" target="_blank" class="flex items-center gap-2 text-accion hover:opacity-80 transition-opacity">
+                <i class="fa-brands fa-instagram text-2xl"></i>
+                <span class="font-bold text-sm tracking-wider uppercase underline underline-offset-4">accion_uao</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ASUA -->
+    <section id="asua" class="bg-white rounded-3xl shadow-xl overflow-hidden border-t-[12px] border-asua relative">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="p-8 md:p-12 lg:pr-8">
+          <img src="/ruta-logo-asua.png" alt="Logo ASUA" class="h-24 object-contain mb-6">
+          <p class="text-base leading-relaxed mb-4">
+            Acción Social de la Universidad Anáhuac (ASUA) es el programa de voluntariado de la Red de Universidades Anáhuac (RUA).
+          </p>
+          <p class="text-base leading-relaxed mb-8">
+            <strong class="text-ink">Está organizado en mesas de trabajo por cada escuela, así como en una mesa general encargada de la coordinación conjunta.</strong>
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <img src="/ruta-foto-asua1.jpg" alt="Voluntarios ASUA" class="rounded-xl w-full h-40 object-cover bg-gray-200">
+            <img src="/ruta-foto-asua2.jpg" alt="Actividad ASUA" class="rounded-xl w-full h-40 object-cover bg-gray-200">
+          </div>
+        </div>
+        
+        <div class="bg-asua/5 p-8 md:p-12 lg:pl-8 border-l border-asua/10">
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-heading text-asua text-lg font-bold">Duración</h3>
+              <p class="font-medium text-ink">Tiempo indefinido</p>
+            </div>
+            
+            <div>
+              <h3 class="font-heading text-asua text-lg font-bold">Requisitos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-ink">
+                <li>Alto sentido de voluntad y responsabilidad</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-heading text-asua text-lg font-bold">Beneficios</h3>
+              <ul class="list-disc list-inside space-y-2 mt-2 text-sm text-ink">
+                <li>Desarrollo de habilidades blandas, liderazgo y empatía</li>
+                <li>Desarrollo de conciencia social y ética al interactuar y empatizar con diferentes realidades</li>
+              </ul>
+              <p class="mt-4 font-bold text-asua">Acreedor a cartas de recomendación con valor curricular</p>
+            </div>
+
+            <div class="bg-[#B4C6DF] rounded-xl p-5 mt-6">
+              <h4 class="font-heading font-bold text-ink">Eventos que mínimo se hacen una vez al año:</h4>
+              <ul class="list-disc list-inside text-sm text-ink mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <li>Brigadas médicas</li>
+                <li>Donación de sangre</li>
+                <li>Construcción de viviendas</li>
+                <li>Reforestación</li>
+              </ul>
+            </div>
+
+            <div class="flex items-center justify-between pt-6 border-t border-asua/20 mt-6">
+              <div class="text-xs">
+                <span class="font-bold text-ink block">Coordinador:</span> Erwin Garcia Acevedo<br>
+                <a href="mailto:erwin.garcia@anahuac.mx" class="text-asua hover:underline">erwin.garcia@anahuac.mx</a>
+              </div>
+              <a href="https://instagram.com/ASUAOAXACA" target="_blank" class="flex items-center gap-2 text-asua hover:opacity-80 transition-opacity">
+                <i class="fa-brands fa-instagram text-2xl"></i>
+                <span class="font-bold text-sm tracking-wider uppercase underline underline-offset-4">asuaoaxaca</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER SIMPLE -->
+  <footer class="bg-ink text-white py-8 mt-12 text-center text-sm">
+    <p>&copy; 2026 Universidad Anáhuac Oaxaca. Manual del Estudiante.</p>
+  </footer>
+
+</body>
+</html>
