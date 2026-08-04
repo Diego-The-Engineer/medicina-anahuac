@@ -88,8 +88,8 @@
         <a href="#contacto" class="text-sm font-medium text-gray-600 transition-colors hover:text-anahuac">Contacto</a>
       </nav>
 
-      <a href="#secciones" class="rounded-full bg-anahuac px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:scale-105 hover:bg-anahuac-dark hover:shadow-md">
-        Explorar
+      <a href="https://oaxaca.anahuac.mx/licenciaturas/medico-cirujano" class="rounded-full bg-anahuac px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:scale-105 hover:bg-anahuac-dark hover:shadow-md">
+        Detalles de la carrera
       </a>
     </div>
   </header>
@@ -142,7 +142,7 @@
       </div>
     </div>
   </section>
-
+  
   <!-- ===================== FEATURED: SOCIEDAD DE ALUMNOS ===================== -->
   <section id="sociedad" class="bg-gray-50 py-20">
     <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2 lg:gap-16">
@@ -176,14 +176,31 @@
           </li>
         </ul>
 
-        <a href="#contacto" class="mt-8 inline-flex items-center gap-2 rounded-full bg-anahuac px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:scale-105 hover:bg-anahuac-dark">
+        <button  class="mt-8 inline-flex items-center gap-2 rounded-full bg-anahuac px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:scale-105 hover:bg-anahuac-dark" onclick="document.getElementById('whatsapp-modal').classList.remove('hidden')" class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3 bg-[#FF5900] text-white font-semibold rounded-full hover:bg-[#e04e00] transition-colors shadow-md">
           Únete a la manada
           <i class="fa-solid fa-paw"></i>
-        </a>
+        </button>
       </div>
     </div>
   </section>
-
+<div id="whatsapp-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm px-4">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 text-center transform transition-all">
+        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+            <svg class="h-8 w-8 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.098l-3.324 1.746.635-3.711-2.696-2.628 3.726-.541 1.667-3.376 1.667 3.376 3.726.541-2.696 2.628.635 3.711zM12 2C6.477 2 2 6.477 2 12c0 1.746.449 3.393 1.25 4.846L2 22l5.323-1.15A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#1F2937] mb-2">¡Bienvenido a tu generación!</h3>
+        <p class="text-gray-500 mb-6">Estás a un clic de unirte a la comunidad oficial. Resuelve dudas, conoce a tus compañeros y entérate de los eventos.</p>
+        
+        <div class="flex flex-col gap-3">
+            <a href="https://chat.whatsapp.com/IWSmQFb1sOOGNNADFEzYEy?mode=gi_t" target="_blank" class="w-full bg-[#25D366] text-white font-bold py-3 rounded-full hover:bg-[#1ebe57] transition-colors shadow-sm">
+                Unirme al grupo de WhatsApp
+            </a>
+            <button onclick="document.getElementById('whatsapp-modal').classList.add('hidden')" class="w-full bg-gray-100 text-gray-700 font-bold py-3 rounded-full hover:bg-gray-200 transition-colors">
+                Cancelar
+            </button>
+        </div>
+    </div>
+</div>
   <!-- ===================== FOOTER ===================== -->
   <footer id="contacto" class="bg-black py-16 text-white">
     <div class="mx-auto max-w-6xl px-4">
@@ -203,9 +220,9 @@
         <div>
           <h3 class="font-heading text-sm font-semibold uppercase tracking-wide text-gray-300">Enlaces Oficiales</h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-400">
-            <li><a href="#" class="transition-colors hover:text-anahuac">Portal del Estudiante</a></li>
+            <li><a href="https://rua-ssb-prod.ban.anahuac.mx/RUA_UAO/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu#pageName=bmenu--P_StuMainMnu___UID1&pageReferrerId=&pageDepth=2&options=false" class="transition-colors hover:text-anahuac">Portal del Estudiante</a></li>
             <li><a href="https://www.anahuac.mx/oaxaca/calendario-2026" class="transition-colors hover:text-anahuac">Calendario Académico</a></li>
-            <li><a href="#" class="transition-colors hover:text-anahuac">Biblioteca Digital</a></li>
+            <li><a href="https://biblioteca-anahuac.vercel.app/" class="transition-colors hover:text-anahuac">Biblioteca Digital Medicina</a></li>
             <li><a href="https://www.anahuac.mx/oaxaca/compendio-reglamentario" class="transition-colors hover:text-anahuac">Reglamentos</a></li>
           </ul>
         </div>
