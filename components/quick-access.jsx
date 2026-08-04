@@ -16,7 +16,7 @@ const items = [
     title: 'Sociedad de Alumnos',
     description: 'Tu voz y representación estudiantil.',
     icon: Users,
-    href: 'sociedad_alumnos',
+    href: '/sociedad_alumnos.html',
   },
   {
     title: '¿Cómo funciona la facultad?',
@@ -28,7 +28,7 @@ const items = [
     title: 'Reglamentos',
     description: 'Normativas y lineamientos clave.',
     icon: ScrollText,
-    href: '#secciones',
+    href: 'https://anahuac.mx/oaxaca/compendio-reglamentario',
   },
   {
     title: 'Servicios Universitarios',
@@ -40,7 +40,7 @@ const items = [
     title: 'Becas',
     description: 'Apoyos financieros y requisitos.',
     icon: GraduationCap,
-    href: '#secciones',
+    href: 'https://oaxaca.anahuac.mx/licenciaturas/becas',
   },
   {
     title: 'Carga de materias',
@@ -52,7 +52,7 @@ const items = [
     title: 'Recursos para estudiar',
     description: 'Herramientas y material de apoyo.',
     icon: Library,
-    href: '#secciones',
+    href: 'https://biblioteca-anahuac.vercel.app/',
   },
   {
     title: 'Ayuda y Contacto',
@@ -61,7 +61,6 @@ const items = [
     href: '#contacto',
   },
 ]
-
 export function QuickAccess() {
   return (
     <section id="secciones" className="bg-background py-20 sm:py-28">
@@ -83,6 +82,8 @@ export function QuickAccess() {
               <Reveal as="article" key={item.title} delay={(index % 4) * 80}>
                 <a
                   href={item.href}
+                  target={item.href.startsWith('http') ? '_blank' :'_self'}
+                  rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className="group flex h-full flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-brand/40 hover:shadow-xl sm:p-6"
                 >
                   <div className="mb-4 flex items-center justify-between">
