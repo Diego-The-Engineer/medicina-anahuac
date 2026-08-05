@@ -126,13 +126,47 @@
         <a href="manual-net.html" class="text-sm font-medium text-gray-600 transition-colors hover:text-anahuac">Manual
           Net
           Anahuac</a>
-      </nav>
-
-      <a href="https://oaxaca.anahuac.mx/licenciaturas/medico-cirujano"
+          <a href="https://oaxaca.anahuac.mx/licenciaturas/medico-cirujano"
         class="rounded-full bg-anahuac px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:scale-105 hover:bg-anahuac-dark hover:shadow-md">
         Detalles de la carrera
       </a>
-    </div>
+      </nav>
+      <div class="relative md:hidden">
+        
+        <!-- Botón del celular (Le agregamos la función onclick) -->
+        <button onclick="document.getElementById('menu-desplegable').classList.toggle('hidden')" class="flex items-center gap-2 rounded-full bg-anahuac px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-anahuac-dark">
+          Enlaces
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </button>
+
+        <!-- Lista desplegable (Le pusimos un ID y la clase 'hidden' para que inicie cerrado) -->
+        <div id="menu-desplegable" class="hidden absolute right-0 mt-2 w-56 origin-top-right rounded-xl bg-white shadow-xl ring-1 ring-black/5 z-50">
+          <div class="p-2 flex flex-col gap-1">
+            
+            <a href="https://oaxaca.anahuac.mx/licenciaturas/medico-cirujano" target="_blank" class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-anahuac/10 hover:text-anahuac">
+              <i class="fa-solid fa-stethoscope w-4 text-center text-gray-400"></i>
+              Detalles de la carrera
+            </a>
+            
+            <a href="inscripcion-materias.html" target="_blank" class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-anahuac/10 hover:text-anahuac">
+              <i class="fa-solid fa-book w-4 text-center text-gray-400"></i>
+              Inscripción a materias
+            </a>
+            
+            <a href="programas.html" target="_blank" class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-anahuac/10 hover:text-anahuac">
+              <i class="fa-solid fa-users-viewfinder w-4 text-center text-gray-400"></i>
+              Programas de liderazgo
+            </a>
+            
+            <a href="manual-net.html" target="_blank" class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-anahuac/10 hover:text-anahuac">
+              <i class="fa-solid fa-mobile-screen w-4 text-center text-gray-400"></i>
+              Manual Net Anáhuac
+            </a>
+
+          </div>
+        </div>
+      </div>
+    
   </header>
 
   <!-- ===================== HERO ===================== -->
