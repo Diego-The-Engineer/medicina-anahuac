@@ -6,12 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Cuándo son las fechas para inscribir materias? ¿Cómo es el proceso? - Medicina Anáhuac</title>
     <link rel="stylesheet" href="inscripcion-materias.css">
+    <style>
+        /* Estilo rápido para el botón de volver (puedes moverlo a tu CSS si lo prefieres) */
+        .btn-volver {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            padding: 10px 18px;
+            background-color: #002d62;
+            /* Color azul institucional típico, cámbialo si gustas */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn-volver:hover {
+            background-color: #001f44;
+            transform: translateY(-1px);
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="container">
         <main class="content-wrapper">
+            <!-- Botón para regresar al index.html -->
+            <a href="index.html" class="btn-volver">
+                ← Volver al inicio
+            </a>
+
             <div class="header-section">
                 <h1 class="main-title">¿Cuándo son las fechas para inscribir materias?</h1>
                 <h1 class="main-title">¿Cómo es el proceso?</h1>
@@ -189,7 +216,8 @@
                     </div>
                     <div class="error-text-box">
                         <p class="text-paragraph">Esto significa que intentaste cargar solo la parte teórica o solo la
-                            parte práctica de la materia, pero ambas deben ir juntas. Es un correquisito, lo que quiere
+                            parte práctica de la materia, pero ambas deben ir juntas. Es un correquisito, o lo que
+                            quiere
                             decir que:</p>
                         <ul class="process-list">
                             <li>Para inscribir la teoría también debes inscribir al mismo tiempo la práctica y
