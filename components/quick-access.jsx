@@ -47,7 +47,7 @@ const items = [
     title: 'Carga de materias',
     description: 'Inscripción y plan de estudios.',
     icon: BookOpenCheck,
-    href: '#secciones',
+    href: 'inscripcion-materias',
   },
   {
     title: 'Recursos para estudiar',
